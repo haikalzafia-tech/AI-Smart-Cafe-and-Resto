@@ -37,9 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #ini buat nyambungin django dan next js
+    'rest_framework',
+    'corsheader',
+    #dibawah ini buat API nya
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware', # <-- Middleware corsheader 
+    'django.middleware.security.SecurityMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -125,3 +131,8 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+#Perizinan untuk menerima front end dari next JS
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+]
