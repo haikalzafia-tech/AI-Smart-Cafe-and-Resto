@@ -1,14 +1,16 @@
 "use client";
 
 import { useState, type ReactNode } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const DAFTAR_MEJA: string[] = Array.from({ length: 20 }, (_, i) => `Meja ${i + 1}`);
 
 /* ---------- Ikon (inline SVG, tanpa dependensi) ---------- */
 const IkonMatahari = () => (
-  <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" aria-hidden="true">
-    <circle cx="12" cy="12" r="4" />
-    <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+  <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="4.2" fill="currentColor" />
+    <path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6" />
   </svg>
 );
 
@@ -24,8 +26,14 @@ const IkonKeranjang = () => (
   </svg>
 );
 
+const IkonChevron = () => (
+  <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="m6 9 6 6 6-6" />
+  </svg>
+);
+
 const IkonMenu = () => (
-  <svg viewBox="0 0 24 24" className="h-8 w-8" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <path d="M3 18h18" />
     <path d="M5 18a7 7 0 0 1 14 0" />
     <path d="M12 8V6" />
@@ -34,119 +42,146 @@ const IkonMenu = () => (
 );
 
 const IkonBintang = () => (
-  <svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor" aria-hidden="true">
+  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="currentColor" aria-hidden="true">
     <path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9L12 2.5Z" />
   </svg>
 );
 
 const IkonInstagram = () => (
-  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
     <rect x="3" y="3" width="18" height="18" rx="5" />
     <circle cx="12" cy="12" r="4" />
     <circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none" />
   </svg>
 );
 
-const IkonFacebook = () => (
-  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="currentColor" aria-hidden="true">
-    <path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.5 1.6-1.5h1.7V4.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.4H7.6V14h2.8v8h3.1Z" />
-  </svg>
-);
-
 const IkonPanah = () => (
-  <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+  <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <path d="M5 12h14M13 6l6 6-6 6" />
   </svg>
 );
 
-/* ---------- Komponen kecil ---------- */
-type KartuUtamaProps = {
+/* Hiasan daun di pojok kartu */
+const HiasanDaun = ({ className = "" }: { className?: string }) => (
+  <svg viewBox="0 0 120 120" className={className} fill="currentColor" aria-hidden="true">
+    <path d="M20 110C14 62 44 26 100 16c6 52-24 88-80 94Z" />
+    <path d="M10 70C6 44 22 24 50 18c3 28-12 46-40 52Z" opacity="0.7" />
+    <path d="M24 108C46 78 66 56 92 32" fill="none" stroke="#fff" strokeOpacity="0.6" strokeWidth="2" strokeLinecap="round" />
+  </svg>
+);
+
+/* ---------- Tema warna kartu ---------- */
+const TEMA = {
+  hijau: {
+    kartu: "border-[#cfe7db] bg-[linear-gradient(135deg,#e6f4ec_0%,#f7fcf9_100%)] hover:shadow-[0_14px_30px_-10px_rgba(47,125,98,0.35)]",
+    ikon: "bg-[#2f7d62]",
+    daun: "text-[#2f7d62]/15",
+  },
+  oranye: {
+    kartu: "border-[#f3dcc3] bg-[linear-gradient(135deg,#fcebd9_0%,#fffaf4_100%)] hover:shadow-[0_14px_30px_-10px_rgba(217,138,61,0.4)]",
+    ikon: "bg-[#d98a3d]",
+    daun: "text-[#d98a3d]/20",
+  },
+  pink: {
+    kartu: "border-[#f4d3e1] bg-[linear-gradient(135deg,#fbe4ee_0%,#fff8fb_100%)] hover:shadow-[0_14px_30px_-10px_rgba(194,51,111,0.35)]",
+    ikon: "bg-[#c2336f]",
+    daun: "text-[#c2336f]/15",
+  },
+} as const;
+
+type KartuProps = {
   href: string;
+  tema: keyof typeof TEMA;
   ikon: ReactNode;
   judul: string;
   deskripsi: string;
+  eksternal?: boolean;
+  delay: number;
 };
 
-function KartuUtama({ href, ikon, judul, deskripsi }: KartuUtamaProps) {
-  return (
-    <a
-      href={href}
-      className="group relative flex min-h-[190px] flex-col gap-2 rounded-xl border border-[#d9e0d3] bg-white p-5 transition hover:border-[#5d7a4d] hover:shadow-md focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-[#5d7a4d]"
-    >
-      <span className="mb-2 grid h-16 w-16 place-items-center rounded-full bg-[#25382d] text-white">
+function Kartu({ href, tema, ikon, judul, deskripsi, eksternal, delay }: KartuProps) {
+  const t = TEMA[tema];
+  const kelas = `group relative flex min-h-[170px] flex-col gap-1.5 overflow-hidden rounded-2xl border p-5 animate-fade-up transition-all duration-300 hover:-translate-y-1.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2f7d62] ${t.kartu}`;
+
+  const isi = (
+    <>
+      <HiasanDaun
+        className={`pointer-events-none absolute -right-3 -top-3 h-28 w-28 origin-bottom-left animate-sway ${t.daun}`}
+      />
+      <span
+        className={`relative mb-2 grid h-12 w-12 place-items-center rounded-full text-white shadow-md transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6 ${t.ikon}`}
+      >
         {ikon}
       </span>
-      <span className="text-lg font-semibold text-[#1f2a23]">{judul}</span>
-      <span className="max-w-[28ch] text-sm leading-relaxed text-[#66736a]">{deskripsi}</span>
-      <span className="absolute bottom-4 right-4 grid h-10 w-10 place-items-center rounded-full bg-[#5d7a4d] text-white transition-transform group-hover:translate-x-0.5 motion-reduce:transition-none">
+      <span className="relative text-[1.05rem] font-bold text-[#1f3a2e]">{judul}</span>
+      <span className="relative max-w-[26ch] text-[0.82rem] leading-relaxed text-[#4f6358]">
+        {deskripsi}
+      </span>
+      <span className="absolute bottom-4 right-4 grid h-9 w-9 place-items-center rounded-full bg-[#2f7d62] text-white shadow transition-all duration-300 group-hover:translate-x-1 group-hover:bg-[#256650]">
         <IkonPanah />
       </span>
-    </a>
+    </>
   );
-}
 
-type KartuSosmedProps = {
-  href: string;
-  ikon: ReactNode;
-  nama: string;
-  deskripsi: string;
-};
+  const style = { animationDelay: `${delay}ms` };
 
-function KartuSosmed({ href, ikon, nama, deskripsi }: KartuSosmedProps) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group relative flex flex-1 items-center gap-3.5 rounded-xl border border-[#d9e0d3] bg-white py-4 pl-4 pr-16 transition hover:border-[#5d7a4d] hover:shadow-md focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-[#5d7a4d]"
-    >
-      <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-[#e6ede0] text-[#25382d]">
-        {ikon}
-      </span>
-      <span className="flex flex-col gap-0.5">
-        <span className="font-semibold text-[#1f2a23]">{nama}</span>
-        <span className="text-[0.82rem] leading-snug text-[#66736a]">{deskripsi}</span>
-      </span>
-      <span className="absolute right-3.5 top-1/2 grid h-8 w-8 -translate-y-1/2 place-items-center rounded-full bg-[#5d7a4d] text-white transition-transform group-hover:translate-x-0.5 motion-reduce:transition-none">
-        <IkonPanah />
-      </span>
+  return eksternal ? (
+    <a href={href} target="_blank" rel="noopener noreferrer" className={kelas} style={style}>
+      {isi}
     </a>
+  ) : (
+    <Link href={href} className={kelas} style={style}>
+      {isi}
+    </Link>
   );
 }
 
 /* ---------- Halaman ---------- */
 export default function Home() {
   const [meja, setMeja] = useState<string>("Meja 5");
-  const jumlahKeranjang = 0; // ganti dengan state/context keranjang Anda
+  const jumlahKeranjang = 0; // ganti dengan state/context keranjang
 
   return (
-    <div className="min-h-screen bg-[#f4f6f1] text-[#1f2a23]">
+    <div className="min-h-screen bg-[#f6faf7] text-[#1f2a23]">
       {/* Navbar */}
-      <header className="sticky top-0 z-10 flex items-center justify-between gap-4 border-b border-[#d9e0d3] bg-white px-3.5 py-2.5 sm:px-6 sm:py-3">
-        <a href="/" className="flex items-center gap-3">
-          <img src="/logo.png" alt="Logo Treehouse" className="h-10" />
+      <header className="sticky top-0 z-20 flex items-center justify-between gap-4 border-b border-[#e1ece5] bg-white/90 px-3.5 py-2.5 backdrop-blur animate-fade-in sm:px-6 sm:py-3">
+        <Link href="/" className="group flex items-center gap-2.5">
+          <Image
+            src="/logo.png"
+            alt="Logo Treehouse"
+            width={44}
+            height={44}
+            priority
+            className="h-11 w-11 shrink-0 rounded-lg object-contain transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105"
+          />
           <span className="flex flex-col leading-tight">
-            <strong className="text-base">Treehouse</strong>
-            <small className="hidden text-xs text-[#66736a] sm:block">Cafe and Resto</small>
+            <strong className="text-lg font-bold text-[#1f6b50]">Treehouse</strong>
+            <small className="hidden text-xs font-medium text-[#2f7d62] sm:block">
+              Cafe and Resto
+            </small>
           </span>
-        </a>
+        </Link>
 
         <div className="flex items-center gap-2.5 sm:gap-5">
-          <div className="flex items-center gap-2 text-[#8b6b4a]">
-            <IkonMatahari />
-            <span className="flex flex-col text-[0.8rem] leading-tight text-[#66736a]">
-              <span>29°C</span>
+          {/* Cuaca */}
+          <div className="flex items-center gap-2">
+            <span className="inline-block animate-rotate-slow text-[#f5a524]">
+              <IkonMatahari />
+            </span>
+            <span className="flex flex-col text-[0.78rem] leading-tight text-[#4f6358]">
+              <span className="font-semibold text-[#1f3a2e]">29°C</span>
               <span className="hidden sm:block">Cerah</span>
             </span>
           </div>
 
-          <label className="flex items-center gap-1.5 rounded-lg border border-[#d9e0d3] bg-[#f4f6f1] px-3 py-2 text-[#5d7a4d]">
+          {/* Pilih meja */}
+          <label className="relative flex cursor-pointer items-center gap-1.5 rounded-xl border border-[#d6e6dc] bg-white px-3 py-2 text-[#2f7d62] shadow-sm transition hover:border-[#2f7d62] hover:shadow">
             <IkonLokasi />
             <span className="sr-only">Pilih meja</span>
             <select
               value={meja}
               onChange={(e) => setMeja(e.target.value)}
-              className="cursor-pointer bg-transparent text-sm text-[#1f2a23] outline-none"
+              className="cursor-pointer appearance-none bg-transparent pr-5 text-sm font-medium text-[#1f3a2e] outline-none"
             >
               {DAFTAR_MEJA.map((m) => (
                 <option key={m} value={m}>
@@ -154,66 +189,92 @@ export default function Home() {
                 </option>
               ))}
             </select>
+            <span className="pointer-events-none absolute right-2.5 text-[#4f6358]">
+              <IkonChevron />
+            </span>
           </label>
 
-          <a
+          {/* Keranjang */}
+          <Link
             href="/keranjang"
             aria-label="Keranjang"
-            className="relative grid h-11 w-11 place-items-center text-[#25382d]"
+            className="relative grid h-11 w-11 place-items-center rounded-full text-[#1f6b50] transition hover:scale-110 hover:bg-[#e6f4ec]"
           >
             <IkonKeranjang />
-            {jumlahKeranjang > 0 && (
-              <span className="absolute right-0 top-0 grid h-[18px] min-w-[18px] place-items-center rounded-full bg-[#8b6b4a] px-1 text-[0.7rem] font-bold text-white">
-                {jumlahKeranjang}
-              </span>
-            )}
-          </a>
+            <span
+              key={jumlahKeranjang}
+              className="absolute right-0 top-0 grid h-[18px] min-w-[18px] animate-pop place-items-center rounded-full bg-[#1f6b50] px-1 text-[0.68rem] font-bold text-white"
+            >
+              {jumlahKeranjang}
+            </span>
+          </Link>
         </div>
       </header>
 
       <main>
-        {/* Hero — ganti bg-[...] dengan foto kafe: bg-[url('/hero.jpg')] bg-cover bg-center */}
-        <section className="flex min-h-[240px] items-center bg-[linear-gradient(90deg,rgba(37,56,45,0.92),rgba(37,56,45,0.55)),linear-gradient(135deg,#3d5a47,#6f8a5c)] px-4 py-8 text-white sm:min-h-[300px] sm:px-6 sm:py-12">
-          <div className="mx-auto w-full max-w-[1100px]">
-            <p className="mb-1.5 text-lg opacity-85">Welcome to</p>
-            <h1 className="mb-4 text-[clamp(2rem,5vw,3.4rem)] font-bold leading-[1.1] tracking-tight">
+        {/* Hero — foto /public/hero-menu.png */}
+        <section className="relative flex min-h-[270px] items-center overflow-hidden px-4 py-10 text-white sm:min-h-[340px] sm:px-6">
+          <Image
+            src="/hero-menu.png"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="animate-kenburns object-cover"
+          />
+          <div
+            className="absolute inset-0 bg-[linear-gradient(90deg,rgba(15,40,30,0.78)_0%,rgba(15,40,30,0.35)_55%,rgba(15,40,30,0.05)_100%)]"
+            aria-hidden="true"
+          />
+          <div className="relative mx-auto w-full max-w-[1100px]">
+            <p
+              className="mb-1 inline-block animate-slide-right border-b border-white/80 font-script text-3xl leading-none sm:text-4xl"
+              style={{ animationDelay: "150ms" }}
+            >
+              Welcome to
+            </p>
+            <h1
+              className="mb-3 animate-slide-right text-[clamp(2rem,5vw,3.4rem)] font-bold leading-[1.1] tracking-tight drop-shadow"
+              style={{ animationDelay: "300ms" }}
+            >
               Treehouse Cafe and Resto
             </h1>
-            <p className="max-w-[52ch] leading-relaxed opacity-90">
-            The only tree house cafe in Batam. Back to nature, elevated with elegance stunning seaside views & beautiful handcrafted
+            <p
+              className="max-w-[55ch] animate-slide-right leading-relaxed text-white/95 drop-shadow"
+              style={{ animationDelay: "450ms" }}
+            >
+The only tree house cafe in Batam, Back to nature, elevated with elegance, Stunning seaside views & beautiful handcrafted.
             </p>
           </div>
         </section>
 
         {/* Kartu aksi */}
-        <section className="mx-auto grid max-w-[1100px] grid-cols-1 gap-3.5 p-4 sm:grid-cols-2 sm:gap-5 sm:p-6 lg:grid-cols-3">
-          <KartuUtama
+        <section className="mx-auto grid max-w-[1100px] grid-cols-1 gap-4 p-4 sm:p-6 md:grid-cols-3 md:gap-5">
+          <Kartu
             href="/menu"
+            tema="hijau"
             ikon={<IkonMenu />}
             judul="Lihat Menu"
-            deskripsi="Pilih makanan dan minuman, lalu tambahkan ke keranjang."
+            deskripsi="Temukan menu favoritmu dengan rekomendasi terbaik."
+            delay={500}
           />
-          <KartuUtama
+          <Kartu
             href="/review"
+            tema="oranye"
             ikon={<IkonBintang />}
             judul="Beri Ulasan / Review"
-            deskripsi="Ceritakan pengalaman Anda agar kami bisa melayani lebih baik."
+            deskripsi="Bagikan pengalamanmu di Treehouse."
+            delay={650}
           />
-
-          <div className="flex flex-col gap-3.5 sm:col-span-2 sm:flex-row sm:gap-5 lg:col-span-1 lg:flex-col">
-            <KartuSosmed
-              href="https://www.instagram.com/treehousecafeandresto/"
-              ikon={<IkonInstagram />}
-              nama="Instagram"
-              deskripsi="Foto menu dan kabar terbaru."
-            />
-            <KartuSosmed
-              href="https://www.facebook.com/profile.php?id=61590389742572"
-              ikon={<IkonFacebook />}
-              nama="Facebook"
-              deskripsi="Event dan promo kafe."
-            />
-          </div>
+          <Kartu
+            href="https://www.instagram.com/treehousecafeandresto/"
+            tema="pink"
+            ikon={<IkonInstagram />}
+            judul="Instagram"
+            deskripsi="Ikuti kami di Instagram untuk info terbaru."
+            eksternal
+            delay={800}
+          />
         </section>
       </main>
     </div>
