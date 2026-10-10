@@ -215,7 +215,7 @@ export default function Home() {
         {/* Hero — foto /public/hero-menu.png */}
         <section className="relative flex min-h-[270px] items-center overflow-hidden px-4 py-10 text-white sm:min-h-[340px] sm:px-6">
           <Image
-            src="/hero-menu.png"
+            src="/hero-men.png"
             alt=""
             fill
             priority
