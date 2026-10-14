@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
+import { type ReactNode } from "react";
+import { useMeja } from "./components/WajibScan";
 import Image from "next/image";
 import Link from "next/link";
 
-const DAFTAR_MEJA: string[] = Array.from({ length: 20 }, (_, i) => `Meja ${i + 1}`);
 
 /* ---------- Ikon (inline SVG, tanpa dependensi) ---------- */
 const IkonMatahari = () => (
@@ -23,12 +23,6 @@ const IkonLokasi = () => (
 const IkonKeranjang = () => (
   <svg viewBox="0 0 24 24" className="h-7 w-7" fill="currentColor" aria-hidden="true">
     <path d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM1 2v2h2l3.6 7.6-1.4 2.4A2 2 0 0 0 7 17h12v-2H7.4l1.1-2h7.5a2 2 0 0 0 1.8-1l3.6-6.5A1 1 0 0 0 20.5 4H5.2l-.9-2H1Z" />
-  </svg>
-);
-
-const IkonChevron = () => (
-  <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="m6 9 6 6 6-6" />
   </svg>
 );
 
@@ -138,7 +132,7 @@ function Kartu({ href, tema, ikon, judul, deskripsi, eksternal, delay }: KartuPr
 
 /* ---------- Halaman ---------- */
 export default function Home() {
-  const [meja, setMeja] = useState<string>("Meja 5");
+  const sesi = useMeja();
   const jumlahKeranjang = 0; // ganti dengan state/context keranjang
 
   return (
@@ -174,25 +168,11 @@ export default function Home() {
             </span>
           </div>
 
-          {/* Pilih meja */}
-          <label className="relative flex cursor-pointer items-center gap-1.5 rounded-xl border border-[#d6e6dc] bg-white px-3 py-2 text-[#2f7d62] shadow-sm transition hover:border-[#2f7d62] hover:shadow">
+          {/* Meja (dari QR, tidak bisa diubah) */}
+          <div className="flex items-center gap-1.5 rounded-xl border border-[#d6e6dc] bg-white px-3 py-2 text-[#2f7d62] shadow-sm">
             <IkonLokasi />
-            <span className="sr-only">Pilih meja</span>
-            <select
-              value={meja}
-              onChange={(e) => setMeja(e.target.value)}
-              className="cursor-pointer appearance-none bg-transparent pr-5 text-sm font-medium text-[#1f3a2e] outline-none"
-            >
-              {DAFTAR_MEJA.map((m) => (
-                <option key={m} value={m}>
-                  {m}
-                </option>
-              ))}
-            </select>
-            <span className="pointer-events-none absolute right-2.5 text-[#4f6358]">
-              <IkonChevron />
-            </span>
-          </label>
+            <span className="text-sm font-medium text-[#1f3a2e]">Meja {sesi?.nomor}</span>
+          </div>
 
           {/* Keranjang */}
           <Link

@@ -76,7 +76,14 @@ export default function Dashboard() {
     <div className="min-h-screen bg-[#f6faf7] text-[#1f2a23]">
       <header className="flex items-center justify-between border-b border-[#e1ece5] bg-white px-4 py-3 sm:px-6">
         <h1 className="text-lg font-bold text-[#1f6b50]">Dashboard Admin - Treehouse</h1>
-        <button onClick={keluar} className="rounded-lg border border-[#d6e6dc] px-3 py-1.5 text-sm hover:bg-[#e6f4ec]">Keluar</button>
+        <div className="flex gap-2">
+          <a href="/admin/meja" className="rounded-lg bg-[#2f7d62] px-3 py-1.5 text-sm text-white hover:bg-[#256650]">
+            Kelola Meja & QR
+          </a>
+          <button onClick={keluar} className="rounded-lg border border-[#d6e6dc] px-3 py-1.5 text-sm hover:bg-[#e6f4ec]">
+            Keluar
+          </button>
+        </div>
       </header>
 
       <main className="mx-auto max-w-[1100px] space-y-6 p-4 sm:p-6">

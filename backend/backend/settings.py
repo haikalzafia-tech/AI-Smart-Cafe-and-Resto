@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',              
     'rest_framework.authtoken',    
     'corsheaders',                 
-    'analytics',               
+    'analytics',    
+    'meja',           
 ]
 
 MIDDLEWARE = [
@@ -142,3 +143,6 @@ REST_FRAMEWORK = {
         "rest_framework.authentication.TokenAuthentication",
     ],
 }
+
+import os
+FRONTEND_URL = os.environ.get('FRONTEND_URL', 'http://localhost:3001')

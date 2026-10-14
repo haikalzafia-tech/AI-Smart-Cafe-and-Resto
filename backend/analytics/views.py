@@ -11,24 +11,6 @@ from rest_framework.response import Response
 
 from .models import Kunjungan
 
-JUMLAH_MEJA = 20
-
-
-@api_view(["POST"])
-@authentication_classes([])
-@permission_classes([AllowAny])
-def catat_kunjungan(request):
-    """PUBLIK: dipanggil halaman menu saat pelanggan membuka halaman (tanpa login)."""
-    sumber = "qr" if request.data.get("sumber") == "qr" else "langsung"
-    try:
-        meja = int(request.data.get("meja"))
-        meja = meja if 1 <= meja <= JUMLAH_MEJA else None
-    except (TypeError, ValueError):
-        meja = None
-    Kunjungan.objects.create(meja=meja, sumber=sumber)
-    return Response({"ok": True}, status=201)
-
-
 @api_view(["POST"])
 @authentication_classes([])
 @permission_classes([AllowAny])

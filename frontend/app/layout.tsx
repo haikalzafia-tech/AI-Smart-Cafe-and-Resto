@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import WajibScan from "./components/WajibScan";
 import { Geist, Geist_Mono, Caveat } from "next/font/google";
 import "./globals.css";
 
@@ -29,7 +30,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="id"
       className={`${geistSans.variable} ${geistMono.variable} ${caveat.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col"><WajibScan>{children}</WajibScan></body>
     </html>
   );
 }
