@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',    
     'corsheaders',                 
     'analytics',    
-    'meja',           
+    'meja',  
+    'menu'         
 ]
 
 MIDDLEWARE = [
@@ -146,3 +147,6 @@ REST_FRAMEWORK = {
 
 import os
 FRONTEND_URL = os.environ.get('FRONTEND_URL', 'http://localhost:3001')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'

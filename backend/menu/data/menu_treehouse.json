@@ -1,0 +1,3367 @@
+[
+  {
+    "nama": "Charcoal Grilled Claypot Seafood Rice",
+    "kategori": "makanan",
+    "subkategori": "Charcoal Grilled Claypot",
+    "deskripsi": "Rice, Shrimp, Squid, Fish Ball, Long Beans, Pakcoy, Man Yu Sauce. Tersedia pukul 10.00 - 21.00.",
+    "harga": 99000,
+    "varian": [
+      {
+        "nama": "2 pax",
+        "harga": 99000
+      },
+      {
+        "nama": "4 pax",
+        "harga": 169000
+      },
+      {
+        "nama": "6 pax",
+        "harga": 219000
+      }
+    ],
+    "suhu": "hangat",
+    "tag": [
+      "seafood",
+      "nasi",
+      "berat",
+      "berbagi"
+    ],
+    "beralkohol": false,
+    "urutan": 1,
+    "foto": "charcoal-grilled-claypot-seafood-rice.jpg"
+  },
+  {
+    "nama": "Charcoal Grilled Claypot Beef Rice",
+    "kategori": "makanan",
+    "subkategori": "Charcoal Grilled Claypot",
+    "deskripsi": "Rice, Mushroom, Carrot, Long Beans, Pakcoy, Beef, Black Pepper Sauce. Tersedia pukul 10.00 - 21.00.",
+    "harga": 89000,
+    "varian": [
+      {
+        "nama": "2 pax",
+        "harga": 89000
+      },
+      {
+        "nama": "4 pax",
+        "harga": 159000
+      },
+      {
+        "nama": "6 pax",
+        "harga": 209000
+      }
+    ],
+    "suhu": "hangat",
+    "tag": [
+      "sapi",
+      "nasi",
+      "berat",
+      "berbagi"
+    ],
+    "beralkohol": false,
+    "urutan": 2,
+    "foto": "charcoal-grilled-claypot-beef-rice.jpg"
+  },
+  {
+    "nama": "Charcoal Grilled Claypot Chicken Rice",
+    "kategori": "makanan",
+    "subkategori": "Charcoal Grilled Claypot",
+    "deskripsi": "Rice, Mushroom, Pakcoy, Chicken Leg, Si Bao Sauce. Tersedia pukul 10.00 - 21.00.",
+    "harga": 79000,
+    "varian": [
+      {
+        "nama": "2 pax",
+        "harga": 79000
+      },
+      {
+        "nama": "4 pax",
+        "harga": 149000
+      },
+      {
+        "nama": "6 pax",
+        "harga": 199000
+      }
+    ],
+    "suhu": "hangat",
+    "tag": [
+      "ayam",
+      "nasi",
+      "berat",
+      "berbagi"
+    ],
+    "beralkohol": false,
+    "urutan": 3,
+    "foto": "charcoal-grilled-claypot-chicken-rice.jpg"
+  },
+  {
+    "nama": "Thai Beef Salad",
+    "kategori": "makanan",
+    "subkategori": "Appetizer (Salad)",
+    "deskripsi": "Lettuce, Paprika, Watercress, Cucumber, Onion, Sweet and Sour Thai Sauce",
+    "harga": 49000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "sapi",
+      "segar",
+      "ringan",
+      "asam"
+    ],
+    "beralkohol": false,
+    "urutan": 4,
+    "foto": "thai-beef-salad.jpg"
+  },
+  {
+    "nama": "Classic Caesar Salad with Crispy Calamari",
+    "kategori": "makanan",
+    "subkategori": "Appetizer (Salad)",
+    "deskripsi": "Lettuce, Cucumber, Tomato Cherry, Crouton, Fried Calamari",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "seafood",
+      "segar",
+      "ringan"
+    ],
+    "beralkohol": false,
+    "urutan": 5,
+    "foto": "classic-caesar-salad-with-crispy-calamari.jpg"
+  },
+  {
+    "nama": "Chicken Salad Hawaiian",
+    "kategori": "makanan",
+    "subkategori": "Appetizer (Salad)",
+    "deskripsi": "Chicken Breast, Pineapple, Lettuce, Corn, Onion, Cashew, Hawaiian Sauce",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "ayam",
+      "segar",
+      "ringan",
+      "manis"
+    ],
+    "beralkohol": false,
+    "urutan": 6,
+    "foto": "chicken-salad-hawaiian.jpg"
+  },
+  {
+    "nama": "Fresh Garden Salad",
+    "kategori": "makanan",
+    "subkategori": "Appetizer (Salad)",
+    "deskripsi": "Lettuce, Romaine, Corn, Tomato Cherry, Capsicum, Red Radish, Tree House Mayo Sauce, Onion, Black Olive",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "vegetarian",
+      "segar",
+      "ringan",
+      "sehat"
+    ],
+    "beralkohol": false,
+    "urutan": 7
+  },
+  {
+    "nama": "Broccoli Cream Soup",
+    "kategori": "makanan",
+    "subkategori": "Soup",
+    "deskripsi": "Broccoli, Cream, Garlic Bread",
+    "harga": 54000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "vegetarian",
+      "creamy",
+      "berkuah",
+      "ringan"
+    ],
+    "beralkohol": false,
+    "urutan": 8,
+    "foto": "broccoli-cream-soup.jpg"
+  },
+  {
+    "nama": "Oxtail Soup",
+    "kategori": "makanan",
+    "subkategori": "Soup",
+    "deskripsi": "Oxtail, Rice, Crackers, Green Chili Sambal",
+    "harga": 109000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "sapi",
+      "berkuah",
+      "berat",
+      "nasi"
+    ],
+    "beralkohol": false,
+    "urutan": 9,
+    "foto": "oxtail-soup.jpg"
+  },
+  {
+    "nama": "Tom Yam Goong",
+    "kategori": "makanan",
+    "subkategori": "Soup",
+    "deskripsi": "Shrimp, Squid, Fish Ball, Otak-Otak Ikan",
+    "harga": 69000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "seafood",
+      "berkuah",
+      "pedas",
+      "asam"
+    ],
+    "beralkohol": false,
+    "urutan": 10,
+    "foto": "tom-yam-goong.jpg"
+  },
+  {
+    "nama": "Royal Sirloin Steak",
+    "kategori": "makanan",
+    "subkategori": "Steak",
+    "deskripsi": "Sirloin Beef, Blueberry Red Sauce (No Red Wine), Baby Potato, Baby Tomato, Baby Buncis and Mix Herb Basil, Lotus Root",
+    "harga": 199000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "sapi",
+      "berat",
+      "premium"
+    ],
+    "beralkohol": false,
+    "urutan": 11,
+    "foto": "royal-sirloin-steak.jpg"
+  },
+  {
+    "nama": "Licious Chicken Steak",
+    "kategori": "makanan",
+    "subkategori": "Steak",
+    "deskripsi": "Chicken Steak, Mushroom Sauce",
+    "harga": 104000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "ayam",
+      "berat",
+      "creamy"
+    ],
+    "beralkohol": false,
+    "urutan": 12,
+    "foto": "licious-chicken-steak.jpg"
+  },
+  {
+    "nama": "Lemon Butter Salmon Deck",
+    "kategori": "makanan",
+    "subkategori": "Steak",
+    "deskripsi": "Salmon, Baby Potato, Baby Tomato, Baby Buncis and Mix Herb Basil, Lotus Root",
+    "harga": 169000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "seafood",
+      "ikan",
+      "berat",
+      "premium"
+    ],
+    "beralkohol": false,
+    "urutan": 13
+  },
+  {
+    "nama": "Rosemary Garlic Lamb Rack",
+    "kategori": "makanan",
+    "subkategori": "Steak",
+    "deskripsi": "Lamb Rack, Baby Potato, Baby Tomato, Baby Buncis and Mix Herb Basil, Lotus Root, Italian Parsley Oil Herbs",
+    "harga": 159000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "kambing",
+      "berat",
+      "premium"
+    ],
+    "beralkohol": false,
+    "urutan": 14,
+    "foto": "rosemary-garlic-lamb-rack.jpg"
+  },
+  {
+    "nama": "Ayam Kampung Tree House",
+    "kategori": "makanan",
+    "subkategori": "Cita Rasa Nusantara",
+    "deskripsi": "Ayam kampung goreng, nasi, kerupuk, lalapan, sambal",
+    "harga": 78000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "ayam",
+      "nasi",
+      "berat",
+      "pedas",
+      "nusantara"
+    ],
+    "beralkohol": false,
+    "urutan": 15,
+    "foto": "ayam-kampung-tree-house.jpg"
+  },
+  {
+    "nama": "Iga Bakar Tree House",
+    "kategori": "makanan",
+    "subkategori": "Cita Rasa Nusantara",
+    "deskripsi": "Iga Bakar, Rice, Crackers, Vegetable Platters, Sambal Bajak Tree House, Soup",
+    "harga": 99000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "sapi",
+      "nasi",
+      "berat",
+      "pedas",
+      "nusantara"
+    ],
+    "beralkohol": false,
+    "urutan": 16,
+    "foto": "iga-bakar-tree-house.jpg"
+  },
+  {
+    "nama": "Bebek Goreng Tree House",
+    "kategori": "makanan",
+    "subkategori": "Cita Rasa Nusantara",
+    "deskripsi": "Fried Duck, Nasi, Emping, Vegetable Platters, Sambal Bajak Tree House",
+    "harga": 78000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "bebek",
+      "nasi",
+      "berat",
+      "pedas",
+      "nusantara"
+    ],
+    "beralkohol": false,
+    "urutan": 17
+  },
+  {
+    "nama": "Gyu Curry Rice",
+    "kategori": "makanan",
+    "subkategori": "Asian Delight",
+    "deskripsi": "Japanese Rice, Japanese Curry Sauce, Onsen Egg, Mix Vegetable",
+    "harga": 64000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "sapi",
+      "nasi",
+      "berat",
+      "kari"
+    ],
+    "beralkohol": false,
+    "urutan": 18,
+    "foto": "gyu-curry-rice.jpg"
+  },
+  {
+    "nama": "Kungpao Beef Rice Bowl",
+    "kategori": "makanan",
+    "subkategori": "Asian Delight",
+    "deskripsi": "Rice, Beef, Egg, Pakcoy, Kungpao Sauce",
+    "harga": 54000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "sapi",
+      "nasi",
+      "pedas"
+    ],
+    "beralkohol": false,
+    "urutan": 19,
+    "foto": "kungpao-beef-rice-bowl.jpg"
+  },
+  {
+    "nama": "Mongolia Chicken Rice Bowl",
+    "kategori": "makanan",
+    "subkategori": "Asian Delight",
+    "deskripsi": "Rice, Chicken, Egg, Pakcoy, Mongolian Sauce",
+    "harga": 49000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "ayam",
+      "nasi"
+    ],
+    "beralkohol": false,
+    "urutan": 20,
+    "foto": "mongolia-chicken-rice-bowl.jpg"
+  },
+  {
+    "nama": "Beef Ginger Onion Rice Bowl",
+    "kategori": "makanan",
+    "subkategori": "Asian Delight",
+    "deskripsi": "Rice, Beef, Pakcoy, Ginger Sauce",
+    "harga": 64000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "sapi",
+      "nasi",
+      "jahe"
+    ],
+    "beralkohol": false,
+    "urutan": 21
+  },
+  {
+    "nama": "Sweet and Sour Prawn Rice Bowl",
+    "kategori": "makanan",
+    "subkategori": "Asian Delight",
+    "deskripsi": "Rice, Prawn, Sweet and Sour Sauce",
+    "harga": 59000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "seafood",
+      "nasi",
+      "asam",
+      "manis"
+    ],
+    "beralkohol": false,
+    "urutan": 22
+  },
+  {
+    "nama": "Sweet and Sour Fish Rice Bowl",
+    "kategori": "makanan",
+    "subkategori": "Asian Delight",
+    "deskripsi": "Rice, Fish, Sweet and Sour Sauce",
+    "harga": 54000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "ikan",
+      "nasi",
+      "asam",
+      "manis"
+    ],
+    "beralkohol": false,
+    "urutan": 23
+  },
+  {
+    "nama": "Sweet and Sour Chicken Rice Bowl",
+    "kategori": "makanan",
+    "subkategori": "Asian Delight",
+    "deskripsi": "Rice, Chicken, Sweet and Sour Sauce",
+    "harga": 49000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "ayam",
+      "nasi",
+      "asam",
+      "manis"
+    ],
+    "beralkohol": false,
+    "urutan": 24
+  },
+  {
+    "nama": "Sotong Salted Egg Rice Bowl",
+    "kategori": "makanan",
+    "subkategori": "Asian Delight",
+    "deskripsi": "Rice, Sotong, Egg, Pakcoy, Salted Egg Sauce",
+    "harga": 59000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "seafood",
+      "nasi",
+      "creamy",
+      "gurih"
+    ],
+    "beralkohol": false,
+    "urutan": 25
+  },
+  {
+    "nama": "Prawn Salted Egg Rice Bowl",
+    "kategori": "makanan",
+    "subkategori": "Asian Delight",
+    "deskripsi": "Rice, Prawn, Egg, Pakcoy, Salted Egg Sauce",
+    "harga": 59000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "seafood",
+      "nasi",
+      "creamy",
+      "gurih"
+    ],
+    "beralkohol": false,
+    "urutan": 26
+  },
+  {
+    "nama": "Chicken Salted Egg Rice Bowl",
+    "kategori": "makanan",
+    "subkategori": "Asian Delight",
+    "deskripsi": "Rice, Chicken, Egg, Pakcoy, Salted Egg Sauce",
+    "harga": 49000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "ayam",
+      "nasi",
+      "creamy",
+      "gurih"
+    ],
+    "beralkohol": false,
+    "urutan": 27
+  },
+  {
+    "nama": "Ramen by Tree House",
+    "kategori": "makanan",
+    "subkategori": "Wok Fried Rice and Noodle",
+    "deskripsi": "Japanese Noodle Ramen, Ajitama Egg, Chicken Broth, Beef Shortplate",
+    "harga": 69000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "sapi",
+      "mie",
+      "berkuah"
+    ],
+    "beralkohol": false,
+    "urutan": 28,
+    "foto": "ramen-by-tree-house.jpg"
+  },
+  {
+    "nama": "Seafood Sambal Noodle",
+    "kategori": "makanan",
+    "subkategori": "Wok Fried Rice and Noodle",
+    "deskripsi": "Indomie, Tauge, Pakcoy, Shrimp, Squid, Fish Ball, Sambal Treehouse",
+    "harga": 54000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "seafood",
+      "mie",
+      "pedas"
+    ],
+    "beralkohol": false,
+    "urutan": 29,
+    "foto": "seafood-sambal-noodle.jpg"
+  },
+  {
+    "nama": "Nasi Goreng Yong Chow",
+    "kategori": "makanan",
+    "subkategori": "Wok Fried Rice and Noodle",
+    "deskripsi": "Rice, Carrot, Beans, Corn, Prawn, Fish Ball, Squid",
+    "harga": 54000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "seafood",
+      "nasi"
+    ],
+    "beralkohol": false,
+    "urutan": 30
+  },
+  {
+    "nama": "Nasi Goreng Iga",
+    "kategori": "makanan",
+    "subkategori": "Wok Fried Rice and Noodle",
+    "deskripsi": "Rice, Iga, Beans, Carrot, Egg, Acar, Herb Paste Iga, Crackers",
+    "harga": 84000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "sapi",
+      "nasi",
+      "berat"
+    ],
+    "beralkohol": false,
+    "urutan": 31
+  },
+  {
+    "nama": "Nasi Goreng Ayam Cabai Hijau",
+    "kategori": "makanan",
+    "subkategori": "Wok Fried Rice and Noodle",
+    "deskripsi": "Rice, Chicken, Green Chilli Paste, Green Chilli Cut, Spring Onion, Beans, Crackers",
+    "harga": 54000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "ayam",
+      "nasi",
+      "pedas"
+    ],
+    "beralkohol": false,
+    "urutan": 32,
+    "foto": "nasi-goreng-ayam-cabai-hijau.jpg"
+  },
+  {
+    "nama": "Nasi Goreng Sambal with Sosis",
+    "kategori": "makanan",
+    "subkategori": "Wok Fried Rice and Noodle",
+    "deskripsi": "Rice, Sausage, Carrot, Beans, Corn",
+    "harga": 54000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "nasi",
+      "pedas"
+    ],
+    "beralkohol": false,
+    "urutan": 33,
+    "foto": "nasi-goreng-sambal-with-sosis.jpg"
+  },
+  {
+    "nama": "Tree House Beef Curry Udon",
+    "kategori": "makanan",
+    "subkategori": "Wok Fried Rice and Noodle",
+    "deskripsi": "Japanese Udon Noodle, Beef, Japanese Curry Sauce",
+    "harga": 74000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "sapi",
+      "mie",
+      "berkuah",
+      "kari"
+    ],
+    "beralkohol": false,
+    "urutan": 34
+  },
+  {
+    "nama": "Tree House Chicken Curry Udon",
+    "kategori": "makanan",
+    "subkategori": "Wok Fried Rice and Noodle",
+    "deskripsi": "Japanese Udon Noodle, Chicken Katsu, Japanese Curry Sauce",
+    "harga": 64000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "ayam",
+      "mie",
+      "berkuah",
+      "kari"
+    ],
+    "beralkohol": false,
+    "urutan": 35,
+    "foto": "tree-house-chicken-curry-udon.jpg"
+  },
+  {
+    "nama": "Pesto Egg Pizza",
+    "kategori": "makanan",
+    "subkategori": "Italian Pizza Creation",
+    "deskripsi": "Pesto Sauce, Ricotta, Eggs, Mozzarella",
+    "harga": 49000,
+    "varian": [
+      {
+        "nama": "Small",
+        "harga": 49000
+      },
+      {
+        "nama": "Big",
+        "harga": 99000
+      }
+    ],
+    "suhu": "netral",
+    "tag": [
+      "vegetarian",
+      "berbagi",
+      "keju"
+    ],
+    "beralkohol": false,
+    "urutan": 36,
+    "foto": "pesto-egg-pizza.jpg"
+  },
+  {
+    "nama": "Beef Black Pepper Pizza",
+    "kategori": "makanan",
+    "subkategori": "Italian Pizza Creation",
+    "deskripsi": "Tomato Sauce, Sausage, Beef Ham, Capsicum, Mushroom",
+    "harga": 49000,
+    "varian": [
+      {
+        "nama": "Small",
+        "harga": 49000
+      },
+      {
+        "nama": "Big",
+        "harga": 99000
+      }
+    ],
+    "suhu": "netral",
+    "tag": [
+      "sapi",
+      "berbagi",
+      "keju"
+    ],
+    "beralkohol": false,
+    "urutan": 37
+  },
+  {
+    "nama": "Chicken Floss Pizza",
+    "kategori": "makanan",
+    "subkategori": "Italian Pizza Creation",
+    "deskripsi": "Creamy Sauce, Chicken Floss, Mushroom, Mozzarella",
+    "harga": 49000,
+    "varian": [
+      {
+        "nama": "Small",
+        "harga": 49000
+      },
+      {
+        "nama": "Big",
+        "harga": 89000
+      }
+    ],
+    "suhu": "netral",
+    "tag": [
+      "ayam",
+      "berbagi",
+      "keju",
+      "creamy"
+    ],
+    "beralkohol": false,
+    "urutan": 38
+  },
+  {
+    "nama": "Hawaiian Veggie Pizza",
+    "kategori": "makanan",
+    "subkategori": "Italian Pizza Creation",
+    "deskripsi": "Tomato Sauce, Onion, Pineapple, Mozzarella",
+    "harga": 49000,
+    "varian": [
+      {
+        "nama": "Small",
+        "harga": 49000
+      },
+      {
+        "nama": "Big",
+        "harga": 79000
+      }
+    ],
+    "suhu": "netral",
+    "tag": [
+      "vegetarian",
+      "berbagi",
+      "keju",
+      "manis"
+    ],
+    "beralkohol": false,
+    "urutan": 39
+  },
+  {
+    "nama": "Pepperoni Pizza",
+    "kategori": "makanan",
+    "subkategori": "Italian Pizza Creation",
+    "deskripsi": "Tomato Sauce, Pepperoni, Mozzarella",
+    "harga": 49000,
+    "varian": [
+      {
+        "nama": "Small",
+        "harga": 49000
+      },
+      {
+        "nama": "Big",
+        "harga": 89000
+      }
+    ],
+    "suhu": "netral",
+    "tag": [
+      "sapi",
+      "berbagi",
+      "keju"
+    ],
+    "beralkohol": false,
+    "urutan": 40
+  },
+  {
+    "nama": "Truffle Bianca Pizza",
+    "kategori": "makanan",
+    "subkategori": "Italian Pizza Creation",
+    "deskripsi": "Creamy Sauce, Ricotta, Mushroom, Truffle Oil, Mozzarella",
+    "harga": 49000,
+    "varian": [
+      {
+        "nama": "Small",
+        "harga": 49000
+      },
+      {
+        "nama": "Big",
+        "harga": 99000
+      }
+    ],
+    "suhu": "netral",
+    "tag": [
+      "vegetarian",
+      "berbagi",
+      "keju",
+      "creamy",
+      "premium"
+    ],
+    "beralkohol": false,
+    "urutan": 41,
+    "foto": "truffle-bianca-pizza.jpg"
+  },
+  {
+    "nama": "Scallop Aglio Olio",
+    "kategori": "makanan",
+    "subkategori": "Pasta Selection",
+    "deskripsi": "Spaghetti, Scallop, Aglio Paste",
+    "harga": 69000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "seafood",
+      "pasta",
+      "pedas"
+    ],
+    "beralkohol": false,
+    "urutan": 42,
+    "foto": "scallop-aglio-olio.jpg"
+  },
+  {
+    "nama": "Beef Creamy Carbonara",
+    "kategori": "makanan",
+    "subkategori": "Pasta Selection",
+    "deskripsi": "Spaghetti, Milk, Cream, Beef Shortplate, Parmesan",
+    "harga": 64000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "sapi",
+      "pasta",
+      "creamy"
+    ],
+    "beralkohol": false,
+    "urutan": 43,
+    "foto": "beef-creamy-carbonara.jpg"
+  },
+  {
+    "nama": "Pesto Herb Pasta",
+    "kategori": "makanan",
+    "subkategori": "Pasta Selection",
+    "deskripsi": "Spaghetti, Pesto Sauce, Tomato Cherry, Parmesan",
+    "harga": 64000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "vegetarian",
+      "pasta"
+    ],
+    "beralkohol": false,
+    "urutan": 44,
+    "foto": "pesto-herb-pasta.jpg"
+  },
+  {
+    "nama": "Club Sandwich",
+    "kategori": "makanan",
+    "subkategori": "Sandwich Selection",
+    "deskripsi": "Chicken Crispy, Selada, Tomato, Cheese, Beef Shortplate, Egg",
+    "harga": 39000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "ayam",
+      "sapi",
+      "roti",
+      "ringan"
+    ],
+    "beralkohol": false,
+    "urutan": 45
+  },
+  {
+    "nama": "Chicken Sandwich",
+    "kategori": "makanan",
+    "subkategori": "Sandwich Selection",
+    "deskripsi": "Fried Chicken Tree House, Selada, Tomato, Cheese, Lava Sauce",
+    "harga": 29000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "ayam",
+      "roti",
+      "ringan"
+    ],
+    "beralkohol": false,
+    "urutan": 46,
+    "foto": "chicken-sandwich.jpg"
+  },
+  {
+    "nama": "Beef Sandwich",
+    "kategori": "makanan",
+    "subkategori": "Sandwich Selection",
+    "deskripsi": "Black Pepper Beef, Tomato, Selada, Black Pepper Sauce",
+    "harga": 34000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "sapi",
+      "roti",
+      "ringan"
+    ],
+    "beralkohol": false,
+    "urutan": 47,
+    "foto": "beef-sandwich.jpg"
+  },
+  {
+    "nama": "Sunny Side Egg Toast",
+    "kategori": "makanan",
+    "subkategori": "Sandwich Selection",
+    "deskripsi": "Toast Bread, Sunny Side Up Egg",
+    "harga": 24000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "vegetarian",
+      "roti",
+      "ringan",
+      "sarapan"
+    ],
+    "beralkohol": false,
+    "urutan": 48,
+    "foto": "sunny-side-egg-toast.jpg"
+  },
+  {
+    "nama": "Chicken Burger",
+    "kategori": "makanan",
+    "subkategori": "Craft Burger",
+    "deskripsi": "Crispy Chicken Patty, Tomato, Cucumber, Selada, Tree House Homemade Sauce, Egg, Cheese, French Fries",
+    "harga": 69000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "ayam",
+      "roti",
+      "berat"
+    ],
+    "beralkohol": false,
+    "urutan": 49
+  },
+  {
+    "nama": "Beef Burger",
+    "kategori": "makanan",
+    "subkategori": "Craft Burger",
+    "deskripsi": "Beef Patty, Tomato, Gherkins Pickle, Selada, Tree House Homemade Sauce, Caramel Onion, Egg, Cheese, French Fries",
+    "harga": 74000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "sapi",
+      "roti",
+      "berat"
+    ],
+    "beralkohol": false,
+    "urutan": 50,
+    "foto": "beef-burger.jpg"
+  },
+  {
+    "nama": "3 House Musketeers Burger",
+    "kategori": "makanan",
+    "subkategori": "Craft Burger",
+    "deskripsi": "Chicken Crispy / Beef Patty, Tomato, Selada, Cheese, Tree House Homemade Sauce",
+    "harga": 79000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "ayam",
+      "sapi",
+      "roti",
+      "berat",
+      "berbagi"
+    ],
+    "beralkohol": false,
+    "urutan": 51,
+    "foto": "3-house-musketeers-burger.jpg"
+  },
+  {
+    "nama": "Tree House Platter",
+    "kategori": "makanan",
+    "subkategori": "Light Bites",
+    "deskripsi": "",
+    "harga": 109000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "berbagi",
+      "gorengan",
+      "snack"
+    ],
+    "beralkohol": false,
+    "urutan": 52,
+    "foto": "tree-house-platter.jpg"
+  },
+  {
+    "nama": "Paru Cabai Garam",
+    "kategori": "makanan",
+    "subkategori": "Light Bites",
+    "deskripsi": "",
+    "harga": 54000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "sapi",
+      "pedas",
+      "snack",
+      "gurih"
+    ],
+    "beralkohol": false,
+    "urutan": 53
+  },
+  {
+    "nama": "French Fries",
+    "kategori": "makanan",
+    "subkategori": "Light Bites",
+    "deskripsi": "",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "vegetarian",
+      "snack",
+      "gurih"
+    ],
+    "beralkohol": false,
+    "urutan": 54
+  },
+  {
+    "nama": "Singkong Goreng",
+    "kategori": "makanan",
+    "subkategori": "Light Bites",
+    "deskripsi": "",
+    "harga": 39000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "vegetarian",
+      "snack",
+      "gorengan"
+    ],
+    "beralkohol": false,
+    "urutan": 55
+  },
+  {
+    "nama": "Ubi Goreng Madu",
+    "kategori": "makanan",
+    "subkategori": "Light Bites",
+    "deskripsi": "",
+    "harga": 39000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "vegetarian",
+      "snack",
+      "manis",
+      "gorengan"
+    ],
+    "beralkohol": false,
+    "urutan": 56
+  },
+  {
+    "nama": "Pisang Goreng",
+    "kategori": "makanan",
+    "subkategori": "Light Bites",
+    "deskripsi": "",
+    "harga": 39000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "vegetarian",
+      "snack",
+      "manis",
+      "gorengan"
+    ],
+    "beralkohol": false,
+    "urutan": 57
+  },
+  {
+    "nama": "Chicken Wing",
+    "kategori": "makanan",
+    "subkategori": "Light Bites",
+    "deskripsi": "",
+    "harga": 54000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "ayam",
+      "snack",
+      "gurih"
+    ],
+    "beralkohol": false,
+    "urutan": 58
+  },
+  {
+    "nama": "Chicken Skin",
+    "kategori": "makanan",
+    "subkategori": "Light Bites",
+    "deskripsi": "",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "ayam",
+      "snack",
+      "gurih",
+      "gorengan"
+    ],
+    "beralkohol": false,
+    "urutan": 59
+  },
+  {
+    "nama": "Tahu Cabe Garam",
+    "kategori": "makanan",
+    "subkategori": "Light Bites",
+    "deskripsi": "",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "vegetarian",
+      "snack",
+      "pedas",
+      "gorengan"
+    ],
+    "beralkohol": false,
+    "urutan": 60
+  },
+  {
+    "nama": "Sweet and Sour Anchovy",
+    "kategori": "makanan",
+    "subkategori": "Light Bites",
+    "deskripsi": "",
+    "harga": 54000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "ikan",
+      "snack",
+      "manis",
+      "asam"
+    ],
+    "beralkohol": false,
+    "urutan": 61
+  },
+  {
+    "nama": "Edamame",
+    "kategori": "makanan",
+    "subkategori": "Light Bites",
+    "deskripsi": "",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "vegetarian",
+      "snack",
+      "sehat"
+    ],
+    "beralkohol": false,
+    "urutan": 62,
+    "foto": "edamame.jpg"
+  },
+  {
+    "nama": "Peanut",
+    "kategori": "makanan",
+    "subkategori": "Light Bites",
+    "deskripsi": "",
+    "harga": 34000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "vegetarian",
+      "snack"
+    ],
+    "beralkohol": false,
+    "urutan": 63
+  },
+  {
+    "nama": "Driftwood Chocolate Parfait",
+    "kategori": "dessert",
+    "subkategori": "Taste of Sweetness",
+    "deskripsi": "",
+    "harga": 59000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "manis",
+      "cokelat"
+    ],
+    "beralkohol": false,
+    "urutan": 64
+  },
+  {
+    "nama": "Classic Creme Brulee",
+    "kategori": "dessert",
+    "subkategori": "Taste of Sweetness",
+    "deskripsi": "",
+    "harga": 59000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [
+      "manis",
+      "creamy"
+    ],
+    "beralkohol": false,
+    "urutan": 65
+  },
+  {
+    "nama": "Basque Cheesecake",
+    "kategori": "dessert",
+    "subkategori": "Taste of Sweetness",
+    "deskripsi": "",
+    "harga": 59000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "manis",
+      "keju",
+      "creamy"
+    ],
+    "beralkohol": false,
+    "urutan": 66,
+    "foto": "basque-cheesecake.jpg"
+  },
+  {
+    "nama": "Tiramisu",
+    "kategori": "dessert",
+    "subkategori": "Taste of Sweetness",
+    "deskripsi": "",
+    "harga": 59000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "manis",
+      "kopi",
+      "creamy"
+    ],
+    "beralkohol": false,
+    "urutan": 67,
+    "foto": "tiramisu.jpg"
+  },
+  {
+    "nama": "Strawberry Lava Cake",
+    "kategori": "dessert",
+    "subkategori": "Taste of Sweetness",
+    "deskripsi": "",
+    "harga": 59000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "manis",
+      "buah"
+    ],
+    "beralkohol": false,
+    "urutan": 68
+  },
+  {
+    "nama": "Matcha Lava Cake",
+    "kategori": "dessert",
+    "subkategori": "Taste of Sweetness",
+    "deskripsi": "",
+    "harga": 59000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "manis",
+      "matcha"
+    ],
+    "beralkohol": false,
+    "urutan": 69,
+    "foto": "matcha-lava-cake.jpg"
+  },
+  {
+    "nama": "Crema Gelato",
+    "kategori": "dessert",
+    "subkategori": "Crema Gelato",
+    "deskripsi": "Default topping: Waffle Bowl + Oreo / Lotus Biscoff Crumbs. Extra topping +Rp5.000: Nata de Coco, Popping Boba, Mini Marshmallow, Chocolate Chips, Mini Cone. Rasa: Crema-Vanilla, Chocolate, Cream Cheese, Matcha, Cream Cookies, Red Beans, Lime, Mango.",
+    "harga": 40000,
+    "varian": [
+      {
+        "nama": "1 Scoop",
+        "harga": 40000
+      },
+      {
+        "nama": "2 Scoops",
+        "harga": 70000
+      },
+      {
+        "nama": "Mini Trio",
+        "harga": 75000
+      }
+    ],
+    "suhu": "dingin",
+    "tag": [
+      "manis",
+      "es krim",
+      "segar"
+    ],
+    "beralkohol": false,
+    "urutan": 70,
+    "foto": "crema-gelato.jpg"
+  },
+  {
+    "nama": "Snow Ice Passion Fruit Milk",
+    "kategori": "dessert",
+    "subkategori": "Snow Ice",
+    "deskripsi": "Fluffy, creamy, fresh",
+    "harga": 58000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "manis",
+      "es",
+      "buah",
+      "segar"
+    ],
+    "beralkohol": false,
+    "urutan": 71,
+    "foto": "snow-ice-passion-fruit-milk.jpg"
+  },
+  {
+    "nama": "Snow Ice Chocolate Milk",
+    "kategori": "dessert",
+    "subkategori": "Snow Ice",
+    "deskripsi": "Fluffy, creamy, fresh",
+    "harga": 58000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "manis",
+      "es",
+      "cokelat"
+    ],
+    "beralkohol": false,
+    "urutan": 72,
+    "foto": "snow-ice-chocolate-milk.jpg"
+  },
+  {
+    "nama": "Snow Ice Strawberry",
+    "kategori": "dessert",
+    "subkategori": "Snow Ice",
+    "deskripsi": "Fluffy, creamy, fresh",
+    "harga": 68000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "manis",
+      "es",
+      "buah",
+      "segar"
+    ],
+    "beralkohol": false,
+    "urutan": 73,
+    "foto": "snow-ice-strawberry.jpg"
+  },
+  {
+    "nama": "Snow Ice Mango",
+    "kategori": "dessert",
+    "subkategori": "Snow Ice",
+    "deskripsi": "Fluffy, creamy, fresh",
+    "harga": 68000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "manis",
+      "es",
+      "buah",
+      "segar"
+    ],
+    "beralkohol": false,
+    "urutan": 74,
+    "foto": "snow-ice-mango.jpg"
+  },
+  {
+    "nama": "Treehouse Signature",
+    "kategori": "minuman",
+    "subkategori": "Signature Rettecoffee",
+    "deskripsi": "Espresso, Fresh Milk, Condensed Milk, Creamer",
+    "harga": 39000,
+    "varian": [],
+    "suhu": "fleksibel",
+    "tag": [
+      "kopi",
+      "manis",
+      "susu"
+    ],
+    "beralkohol": false,
+    "urutan": 75
+  },
+  {
+    "nama": "Biscoff Latte",
+    "kategori": "minuman",
+    "subkategori": "Signature Rettecoffee",
+    "deskripsi": "Espresso, Fresh Milk, Caramel Syrup, Biscoff",
+    "harga": 39000,
+    "varian": [],
+    "suhu": "fleksibel",
+    "tag": [
+      "kopi",
+      "manis",
+      "susu"
+    ],
+    "beralkohol": false,
+    "urutan": 76
+  },
+  {
+    "nama": "Coffee Pandan",
+    "kategori": "minuman",
+    "subkategori": "Signature Rettecoffee",
+    "deskripsi": "Espresso, Fresh Milk, Pandan Syrup, Creamer",
+    "harga": 39000,
+    "varian": [],
+    "suhu": "fleksibel",
+    "tag": [
+      "kopi",
+      "manis",
+      "susu"
+    ],
+    "beralkohol": false,
+    "urutan": 77
+  },
+  {
+    "nama": "Coffee Regal Latte",
+    "kategori": "minuman",
+    "subkategori": "Signature Rettecoffee",
+    "deskripsi": "Espresso, Fresh Milk, Creamer, Regal",
+    "harga": 39000,
+    "varian": [],
+    "suhu": "fleksibel",
+    "tag": [
+      "kopi",
+      "manis",
+      "susu"
+    ],
+    "beralkohol": false,
+    "urutan": 78
+  },
+  {
+    "nama": "Almond Coffee Latte",
+    "kategori": "minuman",
+    "subkategori": "Signature Rettecoffee",
+    "deskripsi": "Espresso, Fresh Milk, Almond Syrup",
+    "harga": 39000,
+    "varian": [],
+    "suhu": "fleksibel",
+    "tag": [
+      "kopi",
+      "manis",
+      "susu"
+    ],
+    "beralkohol": false,
+    "urutan": 79
+  },
+  {
+    "nama": "Coconut Coffee Milk",
+    "kategori": "minuman",
+    "subkategori": "Signature Rettecoffee",
+    "deskripsi": "Espresso, Fresh Milk, Condensed Milk, Coconut Syrup",
+    "harga": 39000,
+    "varian": [],
+    "suhu": "fleksibel",
+    "tag": [
+      "kopi",
+      "manis",
+      "susu"
+    ],
+    "beralkohol": false,
+    "urutan": 80
+  },
+  {
+    "nama": "Berry Coffee Latte",
+    "kategori": "minuman",
+    "subkategori": "Signature Rettecoffee",
+    "deskripsi": "",
+    "harga": 39000,
+    "varian": [],
+    "suhu": "fleksibel",
+    "tag": [
+      "kopi",
+      "manis",
+      "susu"
+    ],
+    "beralkohol": false,
+    "urutan": 81
+  },
+  {
+    "nama": "Butterscotch Caramel Crumble",
+    "kategori": "minuman",
+    "subkategori": "Signature Rettecoffee",
+    "deskripsi": "",
+    "harga": 39000,
+    "varian": [],
+    "suhu": "fleksibel",
+    "tag": [
+      "kopi",
+      "manis",
+      "susu"
+    ],
+    "beralkohol": false,
+    "urutan": 82
+  },
+  {
+    "nama": "Coffee Latte",
+    "kategori": "minuman",
+    "subkategori": "Coffee Hot / Ice",
+    "deskripsi": "Espresso, Fresh Milk",
+    "harga": 34000,
+    "varian": [],
+    "suhu": "fleksibel",
+    "tag": [
+      "kopi",
+      "susu"
+    ],
+    "beralkohol": false,
+    "urutan": 83
+  },
+  {
+    "nama": "Cappuccino",
+    "kategori": "minuman",
+    "subkategori": "Coffee Hot / Ice",
+    "deskripsi": "Espresso, Fresh Milk, Chocolate Powder",
+    "harga": 34000,
+    "varian": [],
+    "suhu": "fleksibel",
+    "tag": [
+      "kopi",
+      "susu"
+    ],
+    "beralkohol": false,
+    "urutan": 84
+  },
+  {
+    "nama": "Caramel Latte",
+    "kategori": "minuman",
+    "subkategori": "Coffee Hot / Ice",
+    "deskripsi": "Espresso, Fresh Milk, Caramel Sauce, Caramel Syrup",
+    "harga": 34000,
+    "varian": [],
+    "suhu": "fleksibel",
+    "tag": [
+      "kopi",
+      "susu",
+      "manis"
+    ],
+    "beralkohol": false,
+    "urutan": 85
+  },
+  {
+    "nama": "Vanilla Latte",
+    "kategori": "minuman",
+    "subkategori": "Coffee Hot / Ice",
+    "deskripsi": "Espresso, Fresh Milk, Vanilla Syrup, Vanilla Sauce",
+    "harga": 34000,
+    "varian": [],
+    "suhu": "fleksibel",
+    "tag": [
+      "kopi",
+      "susu",
+      "manis"
+    ],
+    "beralkohol": false,
+    "urutan": 86
+  },
+  {
+    "nama": "Butterscotch Latte",
+    "kategori": "minuman",
+    "subkategori": "Coffee Hot / Ice",
+    "deskripsi": "Espresso, Fresh Milk, Butterscotch Syrup, Butterscotch Sauce",
+    "harga": 34000,
+    "varian": [],
+    "suhu": "fleksibel",
+    "tag": [
+      "kopi",
+      "susu",
+      "manis"
+    ],
+    "beralkohol": false,
+    "urutan": 87
+  },
+  {
+    "nama": "Brown Sugar Latte",
+    "kategori": "minuman",
+    "subkategori": "Coffee Hot / Ice",
+    "deskripsi": "Espresso, Fresh Milk, Brown Sugar Syrup, Brown Sugar Sauce",
+    "harga": 34000,
+    "varian": [],
+    "suhu": "fleksibel",
+    "tag": [
+      "kopi",
+      "susu",
+      "manis"
+    ],
+    "beralkohol": false,
+    "urutan": 88
+  },
+  {
+    "nama": "Americano",
+    "kategori": "minuman",
+    "subkategori": "Coffee Hot / Ice",
+    "deskripsi": "Espresso, Water",
+    "harga": 29000,
+    "varian": [],
+    "suhu": "fleksibel",
+    "tag": [
+      "kopi",
+      "pahit"
+    ],
+    "beralkohol": false,
+    "urutan": 89
+  },
+  {
+    "nama": "V60",
+    "kategori": "minuman",
+    "subkategori": "Manual Brew",
+    "deskripsi": "",
+    "harga": 39000,
+    "varian": [],
+    "suhu": "fleksibel",
+    "tag": [
+      "kopi",
+      "pahit"
+    ],
+    "beralkohol": false,
+    "urutan": 90
+  },
+  {
+    "nama": "Japanese",
+    "kategori": "minuman",
+    "subkategori": "Manual Brew",
+    "deskripsi": "Japanese style iced brew",
+    "harga": 39000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "kopi",
+      "pahit",
+      "segar"
+    ],
+    "beralkohol": false,
+    "urutan": 91
+  },
+  {
+    "nama": "Virgin Mango Lychee",
+    "kategori": "minuman",
+    "subkategori": "Mocktail",
+    "deskripsi": "Mango Puree, Lychee Syrup, Lime Juice, Mint Leaves, Soda",
+    "harga": 69000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar",
+      "buah",
+      "soda"
+    ],
+    "beralkohol": false,
+    "urutan": 92
+  },
+  {
+    "nama": "Butterfly Pea Fizz",
+    "kategori": "minuman",
+    "subkategori": "Mocktail",
+    "deskripsi": "Blue Curacao Syrup, Butterfly Pea, Soda",
+    "harga": 69000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar",
+      "buah",
+      "soda"
+    ],
+    "beralkohol": false,
+    "urutan": 93
+  },
+  {
+    "nama": "Berry Crush Butterfly",
+    "kategori": "minuman",
+    "subkategori": "Mocktail",
+    "deskripsi": "Fresh Blueberry, Lime Juice, Soda Water, Butterfly Pea",
+    "harga": 69000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar",
+      "buah",
+      "soda"
+    ],
+    "beralkohol": false,
+    "urutan": 94
+  },
+  {
+    "nama": "Sunset Strawberry Soda",
+    "kategori": "minuman",
+    "subkategori": "Mocktail",
+    "deskripsi": "Fresh Strawberry Syrup, Orange Juice, Lime Juice, Sparkling Water",
+    "harga": 69000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar",
+      "buah",
+      "soda"
+    ],
+    "beralkohol": false,
+    "urutan": 95
+  },
+  {
+    "nama": "Apple Cooler",
+    "kategori": "minuman",
+    "subkategori": "Mocktail",
+    "deskripsi": "Green Apple, Lime Juice, Sparkling Water",
+    "harga": 69000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar",
+      "buah",
+      "soda"
+    ],
+    "beralkohol": false,
+    "urutan": 96
+  },
+  {
+    "nama": "Blueberry Twilight",
+    "kategori": "minuman",
+    "subkategori": "Mocktail",
+    "deskripsi": "Fresh Blueberry, Lime Juice, Sparkling Water, Butterfly Pea",
+    "harga": 69000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar",
+      "buah",
+      "soda"
+    ],
+    "beralkohol": false,
+    "urutan": 97
+  },
+  {
+    "nama": "Berry Peach",
+    "kategori": "minuman",
+    "subkategori": "Mocktail",
+    "deskripsi": "Strawberry Syrup, Peach Syrup, Lime Juice, Lychee Nectar, Sparkling Water",
+    "harga": 69000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar",
+      "buah",
+      "soda"
+    ],
+    "beralkohol": false,
+    "urutan": 98
+  },
+  {
+    "nama": "Virgin Mojito",
+    "kategori": "minuman",
+    "subkategori": "Mocktail",
+    "deskripsi": "Wild Mint Syrup, Lime Juice, Mint Leaves, Sprite",
+    "harga": 69000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar",
+      "buah",
+      "soda"
+    ],
+    "beralkohol": false,
+    "urutan": 99,
+    "foto": "virgin-mojito.jpg"
+  },
+  {
+    "nama": "Blue Sunset",
+    "kategori": "minuman",
+    "subkategori": "Mocktail",
+    "deskripsi": "Blue Curacao Syrup, Orange Juice, Grenadine",
+    "harga": 69000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar",
+      "buah",
+      "soda"
+    ],
+    "beralkohol": false,
+    "urutan": 100
+  },
+  {
+    "nama": "Watermelon Juice",
+    "kategori": "minuman",
+    "subkategori": "Juice",
+    "deskripsi": "",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar",
+      "buah",
+      "sehat"
+    ],
+    "beralkohol": false,
+    "urutan": 101
+  },
+  {
+    "nama": "Orange Juice",
+    "kategori": "minuman",
+    "subkategori": "Juice",
+    "deskripsi": "",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar",
+      "buah",
+      "sehat"
+    ],
+    "beralkohol": false,
+    "urutan": 102
+  },
+  {
+    "nama": "Avocado Juice",
+    "kategori": "minuman",
+    "subkategori": "Juice",
+    "deskripsi": "",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar",
+      "buah",
+      "sehat"
+    ],
+    "beralkohol": false,
+    "urutan": 103
+  },
+  {
+    "nama": "Passion Fruit Juice",
+    "kategori": "minuman",
+    "subkategori": "Juice",
+    "deskripsi": "",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar",
+      "buah",
+      "sehat"
+    ],
+    "beralkohol": false,
+    "urutan": 104
+  },
+  {
+    "nama": "Soursop Juice",
+    "kategori": "minuman",
+    "subkategori": "Juice",
+    "deskripsi": "",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar",
+      "buah",
+      "sehat"
+    ],
+    "beralkohol": false,
+    "urutan": 105
+  },
+  {
+    "nama": "Honeydew Juice",
+    "kategori": "minuman",
+    "subkategori": "Juice",
+    "deskripsi": "",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar",
+      "buah",
+      "sehat"
+    ],
+    "beralkohol": false,
+    "urutan": 106
+  },
+  {
+    "nama": "Green Apple Juice",
+    "kategori": "minuman",
+    "subkategori": "Juice",
+    "deskripsi": "",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar",
+      "buah",
+      "sehat"
+    ],
+    "beralkohol": false,
+    "urutan": 107
+  },
+  {
+    "nama": "Mango Juice",
+    "kategori": "minuman",
+    "subkategori": "Juice",
+    "deskripsi": "",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar",
+      "buah",
+      "sehat"
+    ],
+    "beralkohol": false,
+    "urutan": 108
+  },
+  {
+    "nama": "Vanilla Blend",
+    "kategori": "minuman",
+    "subkategori": "Flavored Blend",
+    "deskripsi": "Vanilla Powder, Fresh Milk, Whip Cream, Astor",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "manis",
+      "susu",
+      "creamy"
+    ],
+    "beralkohol": false,
+    "urutan": 109
+  },
+  {
+    "nama": "Red Velvet Blend",
+    "kategori": "minuman",
+    "subkategori": "Flavored Blend",
+    "deskripsi": "Red Velvet Powder, Fresh Milk, Whip Cream, Astor",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "manis",
+      "susu",
+      "creamy"
+    ],
+    "beralkohol": false,
+    "urutan": 110
+  },
+  {
+    "nama": "Strawberry Blend",
+    "kategori": "minuman",
+    "subkategori": "Flavored Blend",
+    "deskripsi": "Strawberry Powder, Fresh Milk, Whip Cream, Astor",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "manis",
+      "susu",
+      "creamy"
+    ],
+    "beralkohol": false,
+    "urutan": 111,
+    "foto": "strawberry-blend.jpg"
+  },
+  {
+    "nama": "Chocolate Blend",
+    "kategori": "minuman",
+    "subkategori": "Flavored Blend",
+    "deskripsi": "Chocolate Powder, Fresh Milk, Whip Cream, Astor",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "manis",
+      "susu",
+      "creamy"
+    ],
+    "beralkohol": false,
+    "urutan": 112
+  },
+  {
+    "nama": "Taro Blend",
+    "kategori": "minuman",
+    "subkategori": "Flavored Blend",
+    "deskripsi": "Taro Powder, Fresh Milk, Whip Cream, Astor",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "manis",
+      "susu",
+      "creamy"
+    ],
+    "beralkohol": false,
+    "urutan": 113
+  },
+  {
+    "nama": "Matcha Blend",
+    "kategori": "minuman",
+    "subkategori": "Flavored Blend",
+    "deskripsi": "Matcha Powder, Fresh Milk, Whip Cream, Astor",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "manis",
+      "susu",
+      "creamy"
+    ],
+    "beralkohol": false,
+    "urutan": 114,
+    "foto": "matcha-blend.jpg"
+  },
+  {
+    "nama": "Strawberry Tea",
+    "kategori": "minuman",
+    "subkategori": "Flavored Tea",
+    "deskripsi": "Strawberry Syrup, Fresh Strawberry, Tea",
+    "harga": 39000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "teh",
+      "segar",
+      "buah"
+    ],
+    "beralkohol": false,
+    "urutan": 115
+  },
+  {
+    "nama": "Lychee Tea",
+    "kategori": "minuman",
+    "subkategori": "Flavored Tea",
+    "deskripsi": "Lychee Syrup, Fresh Lychee, Tea",
+    "harga": 39000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "teh",
+      "segar",
+      "buah"
+    ],
+    "beralkohol": false,
+    "urutan": 116
+  },
+  {
+    "nama": "Lemon Tea",
+    "kategori": "minuman",
+    "subkategori": "Flavored Tea",
+    "deskripsi": "Lemon Syrup, Lemon Juice, Fresh Lemon, Tea",
+    "harga": 39000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "teh",
+      "segar",
+      "asam"
+    ],
+    "beralkohol": false,
+    "urutan": 117,
+    "foto": "lemon-tea.jpg"
+  },
+  {
+    "nama": "Ginger Honey Tea",
+    "kategori": "minuman",
+    "subkategori": "Flavored Tea",
+    "deskripsi": "Homemade Ginger Honey Tea",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "hangat",
+    "tag": [
+      "teh",
+      "jahe",
+      "manis",
+      "menghangatkan"
+    ],
+    "beralkohol": false,
+    "urutan": 118
+  },
+  {
+    "nama": "Mineral Water",
+    "kategori": "minuman",
+    "subkategori": "Soft Drink",
+    "deskripsi": "",
+    "harga": 19000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar"
+    ],
+    "beralkohol": false,
+    "urutan": 119
+  },
+  {
+    "nama": "Sprite",
+    "kategori": "minuman",
+    "subkategori": "Soft Drink",
+    "deskripsi": "",
+    "harga": 24000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar"
+    ],
+    "beralkohol": false,
+    "urutan": 120
+  },
+  {
+    "nama": "Coca Cola",
+    "kategori": "minuman",
+    "subkategori": "Soft Drink",
+    "deskripsi": "",
+    "harga": 24000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar"
+    ],
+    "beralkohol": false,
+    "urutan": 121
+  },
+  {
+    "nama": "Green Tea",
+    "kategori": "minuman",
+    "subkategori": "Soft Drink",
+    "deskripsi": "",
+    "harga": 24000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar"
+    ],
+    "beralkohol": false,
+    "urutan": 122
+  },
+  {
+    "nama": "Soda Water",
+    "kategori": "minuman",
+    "subkategori": "Soft Drink",
+    "deskripsi": "",
+    "harga": 24000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar"
+    ],
+    "beralkohol": false,
+    "urutan": 123
+  },
+  {
+    "nama": "Tonic Water",
+    "kategori": "minuman",
+    "subkategori": "Soft Drink",
+    "deskripsi": "",
+    "harga": 24000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar"
+    ],
+    "beralkohol": false,
+    "urutan": 124
+  },
+  {
+    "nama": "Red Bull",
+    "kategori": "minuman",
+    "subkategori": "Soft Drink",
+    "deskripsi": "",
+    "harga": 24000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar"
+    ],
+    "beralkohol": false,
+    "urutan": 125
+  },
+  {
+    "nama": "Yakult Flavour",
+    "kategori": "minuman",
+    "subkategori": "Soft Drink",
+    "deskripsi": "",
+    "harga": 29000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar"
+    ],
+    "beralkohol": false,
+    "urutan": 126
+  },
+  {
+    "nama": "Ginger Ale",
+    "kategori": "minuman",
+    "subkategori": "Soft Drink",
+    "deskripsi": "",
+    "harga": 24000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar"
+    ],
+    "beralkohol": false,
+    "urutan": 127
+  },
+  {
+    "nama": "Kelapa Pandan",
+    "kategori": "minuman",
+    "subkategori": "Soft Drink",
+    "deskripsi": "",
+    "harga": 49000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [
+      "segar",
+      "buah",
+      "sehat"
+    ],
+    "beralkohol": false,
+    "urutan": 128,
+    "foto": "kelapa-pandan.jpg"
+  },
+  {
+    "nama": "Sunset in the Jungle",
+    "kategori": "alkohol",
+    "subkategori": "Signature Cocktail",
+    "deskripsi": "",
+    "harga": 109000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 129
+  },
+  {
+    "nama": "Coffee Refresher",
+    "kategori": "alkohol",
+    "subkategori": "Signature Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 130
+  },
+  {
+    "nama": "Sexy Lady",
+    "kategori": "alkohol",
+    "subkategori": "Signature Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 131
+  },
+  {
+    "nama": "Marry Your Ex",
+    "kategori": "alkohol",
+    "subkategori": "Signature Cocktail",
+    "deskripsi": "",
+    "harga": 109000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 132
+  },
+  {
+    "nama": "Balinese",
+    "kategori": "alkohol",
+    "subkategori": "Signature Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 133
+  },
+  {
+    "nama": "Coconut Campari Sour",
+    "kategori": "alkohol",
+    "subkategori": "Signature Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 134
+  },
+  {
+    "nama": "Vanilla Cheesecake",
+    "kategori": "alkohol",
+    "subkategori": "Signature Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 135
+  },
+  {
+    "nama": "Rujak Cocktail",
+    "kategori": "alkohol",
+    "subkategori": "Signature Cocktail",
+    "deskripsi": "",
+    "harga": 99000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 136
+  },
+  {
+    "nama": "Treehouse Pea",
+    "kategori": "alkohol",
+    "subkategori": "Cocktail",
+    "deskripsi": "",
+    "harga": 109000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 137
+  },
+  {
+    "nama": "Negroni Strawberry",
+    "kategori": "alkohol",
+    "subkategori": "Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 138
+  },
+  {
+    "nama": "Mojito Berry",
+    "kategori": "alkohol",
+    "subkategori": "Cocktail",
+    "deskripsi": "",
+    "harga": 99000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 139
+  },
+  {
+    "nama": "Treehouse Paradise",
+    "kategori": "alkohol",
+    "subkategori": "Cocktail",
+    "deskripsi": "",
+    "harga": 99000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 140
+  },
+  {
+    "nama": "Blue Tree",
+    "kategori": "alkohol",
+    "subkategori": "Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 141
+  },
+  {
+    "nama": "Cosmo Peach",
+    "kategori": "alkohol",
+    "subkategori": "Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 142
+  },
+  {
+    "nama": "Sunset Malibu",
+    "kategori": "alkohol",
+    "subkategori": "Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 143
+  },
+  {
+    "nama": "Exotic Japanese",
+    "kategori": "alkohol",
+    "subkategori": "Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 144
+  },
+  {
+    "nama": "Neon Screwdriver",
+    "kategori": "alkohol",
+    "subkategori": "Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 145
+  },
+  {
+    "nama": "Blue Island",
+    "kategori": "alkohol",
+    "subkategori": "Cocktail",
+    "deskripsi": "",
+    "harga": 99000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 146
+  },
+  {
+    "nama": "Tropical Berry",
+    "kategori": "alkohol",
+    "subkategori": "Cocktail",
+    "deskripsi": "",
+    "harga": 109000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 147
+  },
+  {
+    "nama": "Sunset Paloma",
+    "kategori": "alkohol",
+    "subkategori": "Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 148
+  },
+  {
+    "nama": "Tree Flamingo",
+    "kategori": "alkohol",
+    "subkategori": "Cocktail",
+    "deskripsi": "",
+    "harga": 109000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 149
+  },
+  {
+    "nama": "Mojito",
+    "kategori": "alkohol",
+    "subkategori": "International Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 150
+  },
+  {
+    "nama": "Margarita",
+    "kategori": "alkohol",
+    "subkategori": "International Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 151
+  },
+  {
+    "nama": "Illusion",
+    "kategori": "alkohol",
+    "subkategori": "International Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 152
+  },
+  {
+    "nama": "Long Island",
+    "kategori": "alkohol",
+    "subkategori": "International Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 153
+  },
+  {
+    "nama": "Singapore Sling",
+    "kategori": "alkohol",
+    "subkategori": "International Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 154
+  },
+  {
+    "nama": "Tequila Sunrise",
+    "kategori": "alkohol",
+    "subkategori": "International Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 155
+  },
+  {
+    "nama": "Killer Sex",
+    "kategori": "alkohol",
+    "subkategori": "International Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 156
+  },
+  {
+    "nama": "Lychee Martini",
+    "kategori": "alkohol",
+    "subkategori": "International Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 157
+  },
+  {
+    "nama": "Espresso Martini",
+    "kategori": "alkohol",
+    "subkategori": "International Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 158
+  },
+  {
+    "nama": "Whisky Sour",
+    "kategori": "alkohol",
+    "subkategori": "International Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 159
+  },
+  {
+    "nama": "Jagerbomb",
+    "kategori": "alkohol",
+    "subkategori": "International Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 160
+  },
+  {
+    "nama": "Black Russian",
+    "kategori": "alkohol",
+    "subkategori": "International Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 161
+  },
+  {
+    "nama": "Pina Colada",
+    "kategori": "alkohol",
+    "subkategori": "International Cocktail",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 162
+  },
+  {
+    "nama": "Gin Tonic",
+    "kategori": "alkohol",
+    "subkategori": "International Cocktail",
+    "deskripsi": "",
+    "harga": 69000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 163
+  },
+  {
+    "nama": "Vodka Orange",
+    "kategori": "alkohol",
+    "subkategori": "International Cocktail",
+    "deskripsi": "",
+    "harga": 69000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 164
+  },
+  {
+    "nama": "Vodka Cranberry",
+    "kategori": "alkohol",
+    "subkategori": "International Cocktail",
+    "deskripsi": "",
+    "harga": 69000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 165
+  },
+  {
+    "nama": "Bintang Can",
+    "kategori": "alkohol",
+    "subkategori": "Beer",
+    "deskripsi": "",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 166
+  },
+  {
+    "nama": "Bintang Radler Lemon",
+    "kategori": "alkohol",
+    "subkategori": "Beer",
+    "deskripsi": "",
+    "harga": 54000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 167
+  },
+  {
+    "nama": "Bintang Pint",
+    "kategori": "alkohol",
+    "subkategori": "Beer",
+    "deskripsi": "",
+    "harga": 54000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 168
+  },
+  {
+    "nama": "Heineken Can",
+    "kategori": "alkohol",
+    "subkategori": "Beer",
+    "deskripsi": "",
+    "harga": 44000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 169
+  },
+  {
+    "nama": "Heineken Pint",
+    "kategori": "alkohol",
+    "subkategori": "Beer",
+    "deskripsi": "",
+    "harga": 54000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 170
+  },
+  {
+    "nama": "Corona",
+    "kategori": "alkohol",
+    "subkategori": "Beer",
+    "deskripsi": "",
+    "harga": 89000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 171
+  },
+  {
+    "nama": "Guinness Can",
+    "kategori": "alkohol",
+    "subkategori": "Beer",
+    "deskripsi": "",
+    "harga": 59000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 172
+  },
+  {
+    "nama": "Heineken Bucket",
+    "kategori": "alkohol",
+    "subkategori": "Beer by Bucket",
+    "deskripsi": "",
+    "harga": 339000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 173
+  },
+  {
+    "nama": "Bintang Bucket",
+    "kategori": "alkohol",
+    "subkategori": "Beer by Bucket",
+    "deskripsi": "",
+    "harga": 339000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 174
+  },
+  {
+    "nama": "Guinness Bucket",
+    "kategori": "alkohol",
+    "subkategori": "Beer by Bucket",
+    "deskripsi": "",
+    "harga": 409000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 175
+  },
+  {
+    "nama": "Heineken Pint Bucket",
+    "kategori": "alkohol",
+    "subkategori": "Beer by Bucket",
+    "deskripsi": "",
+    "harga": 309000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 176
+  },
+  {
+    "nama": "Bintang Pint Bucket",
+    "kategori": "alkohol",
+    "subkategori": "Beer by Bucket",
+    "deskripsi": "",
+    "harga": 309000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 177
+  },
+  {
+    "nama": "Soju Original",
+    "kategori": "alkohol",
+    "subkategori": "Soju",
+    "deskripsi": "",
+    "harga": 189000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 178
+  },
+  {
+    "nama": "Soju Lychee",
+    "kategori": "alkohol",
+    "subkategori": "Soju",
+    "deskripsi": "",
+    "harga": 189000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 179
+  },
+  {
+    "nama": "Soju Peach",
+    "kategori": "alkohol",
+    "subkategori": "Soju",
+    "deskripsi": "",
+    "harga": 189000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 180
+  },
+  {
+    "nama": "Soju Strawberry",
+    "kategori": "alkohol",
+    "subkategori": "Soju",
+    "deskripsi": "",
+    "harga": 189000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 181
+  },
+  {
+    "nama": "Soju Yakult",
+    "kategori": "alkohol",
+    "subkategori": "Soju",
+    "deskripsi": "",
+    "harga": 189000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 182
+  },
+  {
+    "nama": "Smirnoff Glass",
+    "kategori": "alkohol",
+    "subkategori": "Alcohol by Glass",
+    "deskripsi": "",
+    "harga": 59000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 183
+  },
+  {
+    "nama": "Bacardi Glass",
+    "kategori": "alkohol",
+    "subkategori": "Alcohol by Glass",
+    "deskripsi": "",
+    "harga": 59000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 184
+  },
+  {
+    "nama": "Gordon's Dry Gin Glass",
+    "kategori": "alkohol",
+    "subkategori": "Alcohol by Glass",
+    "deskripsi": "",
+    "harga": 59000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 185
+  },
+  {
+    "nama": "Jose Cuervo Glass",
+    "kategori": "alkohol",
+    "subkategori": "Alcohol by Glass",
+    "deskripsi": "",
+    "harga": 59000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 186
+  },
+  {
+    "nama": "Whisky Glass",
+    "kategori": "alkohol",
+    "subkategori": "Alcohol by Glass",
+    "deskripsi": "",
+    "harga": 59000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 187
+  },
+  {
+    "nama": "Baileys Glass",
+    "kategori": "alkohol",
+    "subkategori": "Alcohol by Glass",
+    "deskripsi": "",
+    "harga": 59000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 188
+  },
+  {
+    "nama": "Midori Glass",
+    "kategori": "alkohol",
+    "subkategori": "Alcohol by Glass",
+    "deskripsi": "",
+    "harga": 59000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 189
+  },
+  {
+    "nama": "Kahlua Glass",
+    "kategori": "alkohol",
+    "subkategori": "Alcohol by Glass",
+    "deskripsi": "",
+    "harga": 59000,
+    "varian": [],
+    "suhu": "dingin",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 190
+  },
+  {
+    "nama": "Smirnoff (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Vodka",
+    "deskripsi": "",
+    "harga": 699000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 191
+  },
+  {
+    "nama": "Grey Goose (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Vodka",
+    "deskripsi": "",
+    "harga": 1299000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 192
+  },
+  {
+    "nama": "Bacardi (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Rum",
+    "deskripsi": "",
+    "harga": 699000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 193
+  },
+  {
+    "nama": "Jose Cuervo Gold (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Tequila",
+    "deskripsi": "",
+    "harga": 749000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 194
+  },
+  {
+    "nama": "Gordon's Dry Gin (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Gin",
+    "deskripsi": "",
+    "harga": 699000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 195
+  },
+  {
+    "nama": "Hendrick's (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Gin",
+    "deskripsi": "",
+    "harga": 1299000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 196
+  },
+  {
+    "nama": "Jack Daniel's (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Whisky",
+    "deskripsi": "",
+    "harga": 1199000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 197
+  },
+  {
+    "nama": "Jameson (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Whisky",
+    "deskripsi": "",
+    "harga": 999000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 198
+  },
+  {
+    "nama": "JW Black Label (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Whisky",
+    "deskripsi": "",
+    "harga": 1199000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 199
+  },
+  {
+    "nama": "Chivas Regal 12 (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Whisky",
+    "deskripsi": "",
+    "harga": 1199000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 200
+  },
+  {
+    "nama": "Chivas Regal 18 (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Whisky",
+    "deskripsi": "",
+    "harga": 1699000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 201
+  },
+  {
+    "nama": "Singleton 12 (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Single Malt Whisky",
+    "deskripsi": "",
+    "harga": 1599000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 202
+  },
+  {
+    "nama": "Macallan 12 (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Single Malt Whisky",
+    "deskripsi": "",
+    "harga": 2999000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 203
+  },
+  {
+    "nama": "Hennessy VSOP (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Cognac",
+    "deskripsi": "",
+    "harga": 2499000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 204
+  },
+  {
+    "nama": "Martell VSOP (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Cognac",
+    "deskripsi": "",
+    "harga": 2199000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 205
+  },
+  {
+    "nama": "Martell Cordon Bleu 70 (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Cognac",
+    "deskripsi": "",
+    "harga": 4999000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 206
+  },
+  {
+    "nama": "Baileys Original (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Liqueur",
+    "deskripsi": "",
+    "harga": 799000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 207
+  },
+  {
+    "nama": "Baileys Strawberry (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Liqueur",
+    "deskripsi": "",
+    "harga": 849000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 208
+  },
+  {
+    "nama": "Jagermeister (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Liqueur",
+    "deskripsi": "",
+    "harga": 849000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 209
+  },
+  {
+    "nama": "Kahlua (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Liqueur",
+    "deskripsi": "",
+    "harga": 799000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 210
+  },
+  {
+    "nama": "Midori (Botol)",
+    "kategori": "alkohol",
+    "subkategori": "Liqueur",
+    "deskripsi": "",
+    "harga": 799000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 211
+  },
+  {
+    "nama": "Jacob's Creek Shiraz Cabernet",
+    "kategori": "alkohol",
+    "subkategori": "Red Wine",
+    "deskripsi": "",
+    "harga": 599000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 212
+  },
+  {
+    "nama": "Sababay Ludisia",
+    "kategori": "alkohol",
+    "subkategori": "Red Wine",
+    "deskripsi": "",
+    "harga": 599000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 213
+  },
+  {
+    "nama": "Vignetti Vitaro",
+    "kategori": "alkohol",
+    "subkategori": "Rose Wine",
+    "deskripsi": "",
+    "harga": 1199000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 214
+  },
+  {
+    "nama": "Cockburn's",
+    "kategori": "alkohol",
+    "subkategori": "Port Wine",
+    "deskripsi": "",
+    "harga": 999000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 215
+  },
+  {
+    "nama": "Dragonfly Moscato",
+    "kategori": "alkohol",
+    "subkategori": "White Wine",
+    "deskripsi": "",
+    "harga": 599000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 216
+  },
+  {
+    "nama": "Moet",
+    "kategori": "alkohol",
+    "subkategori": "Champagne",
+    "deskripsi": "",
+    "harga": 1699000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 217
+  },
+  {
+    "nama": "Sababay Lambrusco",
+    "kategori": "alkohol",
+    "subkategori": "Champagne",
+    "deskripsi": "",
+    "harga": 599000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": true,
+    "urutan": 218
+  },
+  {
+    "nama": "Sampoerna",
+    "kategori": "lainnya",
+    "subkategori": "Cigarette",
+    "deskripsi": "",
+    "harga": 80000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": false,
+    "urutan": 219
+  },
+  {
+    "nama": "Marlboro Red",
+    "kategori": "lainnya",
+    "subkategori": "Cigarette",
+    "deskripsi": "",
+    "harga": 80000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": false,
+    "urutan": 220
+  },
+  {
+    "nama": "Marlboro Ice Burst",
+    "kategori": "lainnya",
+    "subkategori": "Cigarette",
+    "deskripsi": "",
+    "harga": 80000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": false,
+    "urutan": 221
+  },
+  {
+    "nama": "Marlboro Light",
+    "kategori": "lainnya",
+    "subkategori": "Cigarette",
+    "deskripsi": "",
+    "harga": 80000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": false,
+    "urutan": 222
+  },
+  {
+    "nama": "Esse Double",
+    "kategori": "lainnya",
+    "subkategori": "Cigarette",
+    "deskripsi": "",
+    "harga": 80000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": false,
+    "urutan": 223
+  },
+  {
+    "nama": "Surya 16",
+    "kategori": "lainnya",
+    "subkategori": "Cigarette",
+    "deskripsi": "",
+    "harga": 80000,
+    "varian": [],
+    "suhu": "netral",
+    "tag": [],
+    "beralkohol": false,
+    "urutan": 224
+  }
+]
