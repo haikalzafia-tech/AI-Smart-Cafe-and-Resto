@@ -3,6 +3,7 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import { usePathname } from "next/navigation";
 import { ambilSesi, type SesiMeja } from "../lib/sesiMeja";
+import { KeranjangProvider } from "./Keranjang";
 
 const KonteksMeja = createContext<SesiMeja | null>(null);
 export const useMeja = () => useContext(KonteksMeja);
@@ -23,7 +24,13 @@ export default function WajibScan({ children }: { children: ReactNode }) {
   if (bebas) return <>{children}</>;
   if (!siap) return <div className="min-h-screen bg-[#f6faf7]" />;
   if (!sesi) return <LayarScan />;
-  return <KonteksMeja.Provider value={sesi}>{children}</KonteksMeja.Provider>;
+  return (
+    <KonteksMeja.Provider value={sesi}>
+      <KeranjangProvider key={sesi.kode} kodeMeja={sesi.kode}>
+        {children}
+      </KeranjangProvider>
+    </KonteksMeja.Provider>
+  );
 }
 
 function LayarScan() {
@@ -42,4 +49,4 @@ function LayarScan() {
       </div>
     </div>
   );
-}    
+}

@@ -4,6 +4,7 @@ import { type ReactNode } from "react";
 import { useMeja } from "./components/WajibScan";
 import Image from "next/image";
 import Link from "next/link";
+import { useKeranjang } from "./components/Keranjang";
 
 
 /* ---------- Ikon (inline SVG, tanpa dependensi) ---------- */
@@ -133,7 +134,7 @@ function Kartu({ href, tema, ikon, judul, deskripsi, eksternal, delay }: KartuPr
 /* ---------- Halaman ---------- */
 export default function Home() {
   const sesi = useMeja();
-  const jumlahKeranjang = 0; // ganti dengan state/context keranjang
+  const { jumlah: jumlahKeranjang } = useKeranjang(); // ganti dengan state/context keranjang
 
   return (
     <div className="min-h-screen bg-[#f6faf7] text-[#1f2a23]">
