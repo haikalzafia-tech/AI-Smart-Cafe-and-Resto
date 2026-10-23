@@ -8,6 +8,9 @@ venv/
 
 # Database lokal (berisi akun admin & token)
 backend/db.sqlite3
+
+# Foto hasil upload admin (sumber foto awal ada di backend/menu/data/foto)
+backend/media/
 *.sqlite3
 
 # ===== Node / Next.js (frontend) =====
