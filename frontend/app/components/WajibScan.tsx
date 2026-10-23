@@ -4,6 +4,7 @@ import { createContext, useContext, useEffect, useState, type ReactNode } from "
 import { usePathname } from "next/navigation";
 import { ambilSesi, type SesiMeja } from "../lib/sesiMeja";
 import { KeranjangProvider } from "./Keranjang";
+import ChatBox from "./ChatBox";
 
 const KonteksMeja = createContext<SesiMeja | null>(null);
 export const useMeja = () => useContext(KonteksMeja);
@@ -28,6 +29,7 @@ export default function WajibScan({ children }: { children: ReactNode }) {
     <KonteksMeja.Provider value={sesi}>
       <KeranjangProvider key={sesi.kode} kodeMeja={sesi.kode}>
         {children}
+        {pathname !== "/keranjang" && <ChatBox sesi={sesi} />}
       </KeranjangProvider>
     </KonteksMeja.Provider>
   );
