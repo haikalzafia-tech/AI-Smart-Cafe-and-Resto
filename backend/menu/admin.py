@@ -37,5 +37,5 @@ class MenuAdmin(admin.ModelAdmin):
 
 @admin.register(Reaksi)
 class ReaksiAdmin(admin.ModelAdmin):
-    list_display = ("menu", "nilai", "meja", "waktu")
-    list_filter = ("nilai",)
+    list_display = ("menu", "nilai", "cuaca", "periode", "meja", "waktu")
+    list_filter = ("nilai", "cuaca", "periode")

@@ -45,6 +45,8 @@ class Reaksi(models.Model):
     pemilih = models.CharField(max_length=64, help_text="ID acak per browser, bukan data pribadi")
     nilai = models.SmallIntegerField(choices=[(1, "Suka"), (-1, "Tidak suka")])
     meja = models.PositiveSmallIntegerField(null=True, blank=True)
+    cuaca = models.CharField(max_length=10, blank=True, help_text="Kondisi cuaca saat menilai (PLG-04)")
+    periode = models.CharField(max_length=10, blank=True, help_text="pagi / siang / sore / malam")
     waktu = models.DateTimeField(auto_now=True)
 
     class Meta:
