@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { API, KUNCI_TOKEN } from "../../lib/api";
+import AdminShell from "../../components/AdminShell";
 
 type Meja = { id: number; nomor: number; aktif: boolean; link: string; qr: string };
 
@@ -67,18 +68,8 @@ export default function KelolaMeja() {
   const input = "mt-1 w-24 rounded-lg border border-[#d6e6dc] px-3 py-1.5";
 
   return (
-    <div className="min-h-screen bg-[#f6faf7] text-[#1f2a23] print:bg-white">
-      <header className="flex items-center justify-between border-b border-[#e1ece5] bg-white px-4 py-3 sm:px-6 print:hidden">
-        <h1 className="text-lg font-bold text-[#1f6b50]">Kelola Meja & QR</h1>
-        <div className="flex gap-2">
-          <a href="/admin/dashboard" className="rounded-lg border border-[#d6e6dc] px-3 py-1.5 text-sm hover:bg-[#e6f4ec]">
-            ← Dashboard
-          </a>
-          <button onClick={() => window.print()} className={tombol}>Cetak QR</button>
-        </div>
-      </header>
-
-      <main className="mx-auto max-w-[1100px] space-y-6 p-4 sm:p-6 print:max-w-none print:p-0">
+    <AdminShell judul="Meja & QR" aksi={<button onClick={() => window.print()} className={tombol}>Cetak QR</button>}>
+      <>
         <section className="grid gap-4 rounded-2xl border border-[#cfe7db] bg-white p-4 sm:grid-cols-2 print:hidden">
           <form onSubmit={(e) => { e.preventDefault(); buat({ sampai: Number(sampai) }); }} className="flex items-end gap-2">
             <label className="flex flex-col text-sm">
@@ -132,7 +123,7 @@ export default function KelolaMeja() {
             </div>
           ))}
         </section>
-      </main>
-    </div>
+      </>
+    </AdminShell>
   );
 }
