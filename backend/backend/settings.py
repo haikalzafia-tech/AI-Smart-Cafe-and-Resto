@@ -41,8 +41,9 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',    
     'corsheaders',                 
     'analytics',    
-    'meja',  
-    'menu'         
+    'meja',
+    'menu',
+    'rekomendasi',
 ]
 
 MIDDLEWARE = [

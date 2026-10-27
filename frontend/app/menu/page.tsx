@@ -24,6 +24,21 @@ const SUHU: Record<string, { teks: string; kelas: string } | undefined> = {
 
 type Reaksi = Record<number, 1 | -1>;
 
+/* PLG-03: filter harga */
+const RENTANG_HARGA = [
+  { id: "semua", label: "Semua harga", min: 0, maks: Infinity },
+  { id: "hemat", label: "Di bawah Rp40rb", min: 0, maks: 39999 },
+  { id: "sedang", label: "Rp40rb–70rb", min: 40000, maks: 70000 },
+  { id: "premium", label: "Di atas Rp70rb", min: 70001, maks: Infinity },
+];
+
+type Rekomendasi = {
+  judul: string;
+  label_waktu: string;
+  cuaca: { ok: boolean; kondisi: string | null; suhu: number | null; deskripsi: string; lokasi: string };
+  menu: (Menu & { alasan: string })[];
+};
+
 export default function HalamanMenu() {
   const sesi = useMeja();
   const keranjang = useKeranjang();
@@ -36,20 +51,63 @@ export default function HalamanMenu() {
   const [sibuk, setSibuk] = useState<number | null>(null);
   const [dibukaId, setDibukaId] = useState<number | null>(null);
   const [pesan, setPesan] = useState("");
+  const [harga, setHarga] = useState("semua");
+  const [rek, setRek] = useState<Rekomendasi | null>(null);
+  const kodeMeja = sesi?.kode ?? "";
 
+  // Muat menu, lalu perbarui diam-diam tiap 60 detik / saat tab dibuka lagi,
+  // supaya perubahan "habis/tersedia" dari admin langsung terlihat (ADM-02).
   useEffect(() => {
     setReaksi(reaksiSaya());
-    fetch(`${API}/api/menu/`)
-      .then((r) => {
-        if (!r.ok) throw new Error("Menu gagal dimuat. Muat ulang halaman ini.");
-        return r.json();
-      })
-      .then((d: Menu[]) => setMenu(d))
-      .catch((e: Error) =>
-        setError(e.message === "Failed to fetch" ? "Server tidak bisa dihubungi. Panggil pelayan kami." : e.message)
-      )
-      .finally(() => setMemuat(false));
+    let pertama = true;
+    const muat = () =>
+      fetch(`${API}/api/menu/`)
+        .then((r) => {
+          if (!r.ok) throw new Error("Menu gagal dimuat. Muat ulang halaman ini.");
+          return r.json();
+        })
+        .then((d: Menu[]) => {
+          setMenu(d);
+          setError("");
+        })
+        .catch((e: Error) => {
+          if (pertama) setError(e.message === "Failed to fetch" ? "Server tidak bisa dihubungi. Panggil pelayan kami." : e.message);
+        })
+        .finally(() => {
+          pertama = false;
+          setMemuat(false);
+        });
+    muat();
+    const t = setInterval(muat, 60_000);
+    const saatTerlihat = () => document.visibilityState === "visible" && muat();
+    document.addEventListener("visibilitychange", saatTerlihat);
+    return () => {
+      clearInterval(t);
+      document.removeEventListener("visibilitychange", saatTerlihat);
+    };
   }, []);
+
+  // PLG-02: rekomendasi sesuai cuaca & waktu, diperbarui tiap 10 menit
+  useEffect(() => {
+    const muat = () =>
+      fetch(`${API}/api/rekomendasi/?kode=${encodeURIComponent(kodeMeja)}`)
+        .then((r) => (r.ok ? r.json() : null))
+        .then((d: Rekomendasi | null) => d && setRek(d))
+        .catch(() => {});
+    muat();
+    const t = setInterval(muat, 10 * 60_000);
+    return () => clearInterval(t);
+  }, [kodeMeja]);
+
+  // Dibuka dari chat: /menu?buka=12 langsung membuka detail menu itu
+  useEffect(() => {
+    if (!menu.length) return;
+    const id = Number(new URLSearchParams(window.location.search).get("buka"));
+    if (id && menu.some((m) => m.id === id)) {
+      setDibukaId(id);
+      window.history.replaceState(null, "", "/menu");
+    }
+  }, [menu]);
 
   useEffect(() => {
     if (!pesan) return;
@@ -79,10 +137,14 @@ export default function HalamanMenu() {
 
   const kelompok = useMemo(() => {
     const kata = cari.trim().toLowerCase();
-    const terpilih = menu.filter((m) =>
-      kata
-        ? `${m.nama} ${m.deskripsi} ${m.subkategori} ${m.tag.join(" ")}`.toLowerCase().includes(kata)
-        : m.kategori === kategori
+    const r = RENTANG_HARGA.find((x) => x.id === harga) ?? RENTANG_HARGA[0];
+    const terpilih = menu.filter(
+      (m) =>
+        (kata
+          ? `${m.nama} ${m.deskripsi} ${m.subkategori} ${m.tag.join(" ")}`.toLowerCase().includes(kata)
+          : m.kategori === kategori) &&
+        m.harga >= r.min &&
+        m.harga <= r.maks
     );
     const peta = new Map<string, Menu[]>();
     for (const m of terpilih) {
@@ -90,7 +152,7 @@ export default function HalamanMenu() {
       peta.get(m.subkategori)!.push(m);
     }
     return [...peta.entries()];
-  }, [menu, kategori, cari]);
+  }, [menu, kategori, cari, harga]);
 
   const favorit = useMemo(
     () =>
@@ -104,6 +166,14 @@ export default function HalamanMenu() {
   const dibuka = menu.find((m) => m.id === dibukaId) ?? null;
   const tutupDetail = useCallback(() => setDibukaId(null), []);
   const bukaDetail = useCallback((m: Menu) => setDibukaId(m.id), []);
+
+  // Pakai data dari daftar menu (jumlah like ikut ter-update), alasan dari mesin rekomendasi
+  const rekMenu = (rek?.menu ?? [])
+    .map((r) => {
+      const m = menu.find((x) => x.id === r.id);
+      return m && m.tersedia ? { m, alasan: r.alasan } : null;
+    })
+    .filter((x): x is { m: Menu; alasan: string } => x !== null);
 
   const kategoriAda = KATEGORI.filter((k) => menu.some((m) => m.kategori === k.id));
   const propsKartu = { reaksi, sibuk, onReaksi: beriReaksi, onBuka: bukaDetail };
@@ -156,12 +226,45 @@ export default function HalamanMenu() {
               ))}
             </nav>
           )}
+          <div className="-mx-1 flex gap-2 overflow-x-auto px-1" role="group" aria-label="Filter harga">
+            {RENTANG_HARGA.map((r) => (
+              <button
+                key={r.id}
+                onClick={() => setHarga(r.id)}
+                aria-pressed={harga === r.id}
+                className={`shrink-0 rounded-full border px-3 py-1 text-xs transition focus-visible:outline-2 focus-visible:outline-[#E2D4B2] ${
+                  harga === r.id ? "border-[#E2D4B2] bg-[#E2D4B2]/15 text-[#F3EBD8]" : "border-transparent text-[#B9A783] hover:text-[#E2D4B2]"
+                }`}
+              >
+                {r.label}
+              </button>
+            ))}
+          </div>
         </div>
       </header>
 
       <main className="mx-auto max-w-[1100px] px-4 pb-32 pt-6 sm:px-6">
         {memuat && <p className="py-10 text-center text-sm text-[#7A5236]">Membuka buku menu...</p>}
         {error && <p className="rounded-xl bg-[#F6DEC6] p-4 text-sm text-[#8A4B17]">{error}</p>}
+
+        {!cari && rek && rekMenu.length > 0 && (
+          <section className="mb-10 rounded-[28px] bg-[#3B2618] px-4 pb-2 pt-5 text-[#F3EBD8] shadow-[0_8px_0_#2A1A10] sm:px-6">
+            <p className="text-sm text-[#E2D4B2]">
+              {rek.cuaca.ok
+                ? `${rek.cuaca.lokasi}, ${rek.cuaca.deskripsi.toLowerCase()} ${rek.cuaca.suhu}°C`
+                : `${rek.label_waktu} hari di ${rek.cuaca.lokasi}`}
+            </p>
+            <h2 className={`${judul.className} mb-4 text-2xl font-extrabold leading-tight sm:text-3xl`}>{rek.judul}</h2>
+            <div className="-mx-4 flex snap-x gap-5 overflow-x-auto px-4 pb-8 pt-2 sm:-mx-6 sm:px-6">
+              {rekMenu.map(({ m, alasan }) => (
+                <div key={m.id} className="flex w-[230px] shrink-0 snap-start flex-col gap-2 text-[#3B2618]">
+                  <p className="min-h-[2.5em] text-xs leading-snug text-[#E2D4B2]">{alasan}</p>
+                  <KartuMenu m={m} {...propsKartu} />
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {!cari && favorit.length > 0 && (
           <section className="mb-10">
@@ -179,7 +282,9 @@ export default function HalamanMenu() {
 
         {!memuat && !error && kelompok.length === 0 && (
           <p className="py-10 text-center text-sm text-[#7A5236]">
-            Tidak ada menu dengan kata &ldquo;{cari}&rdquo;. Coba kata lain, misalnya &ldquo;ayam&rdquo; atau &ldquo;segar&rdquo;.
+            {cari
+              ? <>Tidak ada menu dengan kata &ldquo;{cari}&rdquo; di rentang harga ini. Coba kata lain atau pilih &ldquo;Semua harga&rdquo;.</>
+              : <>Belum ada menu di rentang harga ini. Pilih &ldquo;Semua harga&rdquo; untuk melihat semuanya.</>}
           </p>
         )}
 

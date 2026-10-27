@@ -5,16 +5,10 @@ import { useMeja } from "./components/WajibScan";
 import Image from "next/image";
 import Link from "next/link";
 import { useKeranjang } from "./components/Keranjang";
+import CuacaNavbar from "./components/CuacaNavbar";
 
 
 /* ---------- Ikon (inline SVG, tanpa dependensi) ---------- */
-const IkonMatahari = () => (
-  <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
-    <circle cx="12" cy="12" r="4.2" fill="currentColor" />
-    <path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6" />
-  </svg>
-);
-
 const IkonLokasi = () => (
   <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
     <path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" />
@@ -134,7 +128,7 @@ function Kartu({ href, tema, ikon, judul, deskripsi, eksternal, delay }: KartuPr
 /* ---------- Halaman ---------- */
 export default function Home() {
   const sesi = useMeja();
-  const { jumlah: jumlahKeranjang } = useKeranjang(); // ganti dengan state/context keranjang
+  const { jumlah: jumlahKeranjang } = useKeranjang();
 
   return (
     <div className="min-h-screen bg-[#f6faf7] text-[#1f2a23]">
@@ -158,16 +152,8 @@ export default function Home() {
         </Link>
 
         <div className="flex items-center gap-2.5 sm:gap-5">
-          {/* Cuaca */}
-          <div className="flex items-center gap-2">
-            <span className="inline-block animate-rotate-slow text-[#f5a524]">
-              <IkonMatahari />
-            </span>
-            <span className="flex flex-col text-[0.78rem] leading-tight text-[#4f6358]">
-              <span className="font-semibold text-[#1f3a2e]">29°C</span>
-              <span className="hidden sm:block">Cerah</span>
-            </span>
-          </div>
+          {/* Cuaca asli dari API */}
+          <CuacaNavbar />
 
           {/* Meja (dari QR, tidak bisa diubah) */}
           <div className="flex items-center gap-1.5 rounded-xl border border-[#d6e6dc] bg-white px-3 py-2 text-[#2f7d62] shadow-sm">

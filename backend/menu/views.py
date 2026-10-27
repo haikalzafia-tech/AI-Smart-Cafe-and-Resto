@@ -65,7 +65,12 @@ class MenuViewSet(viewsets.ModelViewSet):
         if nilai == 0:
             Reaksi.objects.filter(menu=menu, pemilih=pemilih).delete()
         else:
+            from rekomendasi.cuaca import kondisi_sekarang
+
+            cuaca, periode = kondisi_sekarang()  # PLG-04: like/dislike terhubung ke kondisi saat itu
             Reaksi.objects.update_or_create(
-                menu=menu, pemilih=pemilih, defaults={"nilai": nilai, "meja": meja.nomor}
+                menu=menu,
+                pemilih=pemilih,
+                defaults={"nilai": nilai, "meja": meja.nomor, "cuaca": cuaca, "periode": periode},
             )
         return Response(hitung(menu))

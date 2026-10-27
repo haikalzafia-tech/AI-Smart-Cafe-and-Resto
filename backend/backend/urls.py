@@ -8,6 +8,7 @@ urlpatterns = [
     path('api/', include('analytics.urls')),
     path('api/meja/', include('meja.urls')),
     path('api/', include('menu.urls')),
+    path('api/', include('rekomendasi.urls')),
 ]
 
 if settings.DEBUG:

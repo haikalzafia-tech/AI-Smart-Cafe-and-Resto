@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Poppins:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -116,4 +117,11 @@ body {
     animation: none !important;
     transition: none !important;
   }
+}
+/* Font halaman menu, keranjang, ulasan (mengikuti buku menu Treehouse) */
+.font-judul {
+  font-family: "Fraunces", Georgia, serif;
+}
+.font-teks {
+  font-family: "Poppins", system-ui, sans-serif;
 }
